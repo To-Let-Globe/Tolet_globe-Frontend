@@ -472,7 +472,7 @@
         position: absolute;
         height: 80px;
         width:30px;
-        transform: translate3d(820px0px,145px,0) !important;
+        transform: translate3d(820px,145px,0) !important;
     }
     
     .Twindow-1{
