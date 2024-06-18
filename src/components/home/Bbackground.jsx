@@ -1,6 +1,7 @@
 import "../../style/background/background-1.css"
 import "../../style/background/background-3.css"
 import "../../style/background/background-4.css"
+import "../../style/background/background5.css
 import 'animate.css';
 import { Container } from "react-bootstrap"
 // import { HomeImg } from "./homeImg";
