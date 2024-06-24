@@ -20,17 +20,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Login from './components/login/Login';
 import {Service} from './components/service';
 // import { Footer } from './components/footer';
+import Adminpropertylisting from './components/Adminpropertylisting';
 function App() {
-  return (
-   <div className="App">
+  /* <div className="App">
       <BrowserRouter>
       <NavBar />
-      {/* <Nav /> */}
+      {/* <Nav /> 
         <Routes>
           <Route path="/login" element={<Login/>} />
           <Route path="/" element={<Layout/>} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/blog" element={<Blog />} /> */}
+          {/* <Route path="/blog" element={<Blog />} /> 
           <Route path="/blog" element={<BlogMain />} />
           <Route path="/blog/blogpage-1" element={<BlogPage1 />} />
           <Route path="/blog/blogpage-2" element={<BlogPage2 />} />
@@ -43,10 +43,15 @@ function App() {
           <Route path="/login/" element={<Login />} />
           <Route path="/about/" element={<AboutUs />} />
         </Routes>
-        {/* <Footer /> */}
+        {/* <Footer /> 
       </BrowserRouter>
     </div>
-   
+    */
+  return (
+  
+    <>
+       <Adminpropertylisting/>
+   </>
 );
 }
 
