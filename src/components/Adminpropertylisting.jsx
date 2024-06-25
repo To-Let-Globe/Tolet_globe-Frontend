@@ -9,6 +9,8 @@ import {
   Button,
 } from 'reactstrap';
 import '../style/Adminpropertylisting.css'
+import { setRef } from '@mui/material';
+import axios from 'axios';
 
 const Adminpropertylisting = () => {
   const editor = useRef(null);
@@ -29,6 +31,8 @@ const Adminpropertylisting = () => {
   const [bachelors,setbachelors]=useState("");
   const [type,settype]=useState("");
   const [bhk,setbhk]=useState("");
+  const [nrooms,setnrooms]=useState(Number);
+  const [nbath,setnbath]=useState(Number);
   const [floor,setfloor]=useState("");
   const [landmark,setlandmark]=useState("");
   const [bath,setbath]=useState("");
@@ -36,11 +40,13 @@ const Adminpropertylisting = () => {
   const [car,setcar]=useState("");
   const [subscript,setsubscript]=useState("");
   const [comment,setcomment]=useState("");
-  const [image,setimage]=useState("");
+  const [image,setimage]=useState(undefined);
   const [location,setlocation]=useState("");
   const [Registration,setRegistration]=useState("");
-  const upload=async()=>{
+  const [descr,setdescr]=useState("");
+ /* const upload=async()=>{
     console.log("hi");
+    
     const response=await fetch('https://tolet-globe-backend.onrender.com/property/',{
       method:'POST',
       headers:{
@@ -67,13 +73,14 @@ const Adminpropertylisting = () => {
 "Type":	type,
 "BHK":bhk,
 "Floor":	floor,
-"Nearest Landmark":	landmark,
+"NearestLandmark":	landmark,
 "TypeofWashroom":	bath,
 "CoolingFacility":	cooling,
 "CarParking":	car,
 "SubscriptionAmount":	subscript,
 "CommentbyAnalyst":	comment,
 "PicturesandVideos":image,
+
 "LocationLink":	location,
 "RegistrationDate":Registration,
 
@@ -88,7 +95,59 @@ const Adminpropertylisting = () => {
       console.log(data);
     }
     console.log("bye");
-  }
+  }*/
+ 
+    const upload = async () => {
+      const formData = new FormData();
+      formData.append('AnalystName', analyst);
+      formData.append('OwnerName', owner);
+      formData.append('OwnerContactNumber', phone);
+      formData.append('OwnerAlternateContactNumber', altphone);
+      formData.append('Locality', locality);
+      formData.append('Address', address);
+      formData.append('SpaceType', Spacetype);
+      formData.append('PropertyType', propertytype);
+      formData.append('CurrentResidenceofOwner', residence);
+      formData.append('Rent', rent);
+      formData.append('Concession', Concession);
+      formData.append('PetsAllowed', pets);
+      formData.append('Preference', Preference);
+      formData.append('IfBachelors', bachelors);
+      formData.append('Type', type);
+      formData.append('BHK', bhk);
+      formData.append('Floor', floor);
+      formData.append('NearestLandmark', landmark);
+      formData.append('noOfRooms',nrooms);
+      formData.append('noOfbathrooms',nbath);
+      formData.append('description',descr);
+      formData.append('TypeofWashroom', bath);
+      formData.append('CoolingFacility', cooling);
+      formData.append('CarParking', car);
+      formData.append('SubscriptionAmount', subscript);
+      formData.append('CommentbyAnalyst', comment);
+      formData.append('LocationLink', location);
+      formData.append('RegistrationDate', Registration);
+     formData.append('image',image);
+    formData.append('PicturesAndVideos',"");
+      try {
+        const response = await fetch('https://tolet-globe-backend.onrender.com/property/', {
+          method: 'POST',
+          headers: {
+           
+          },
+          body: formData,
+        });
+    const data=await response.json();
+        if (response.ok) {
+          alert("Uploaded Successfully");
+          window.location.reload();
+        } else {
+          console.log(data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
 const resetcontent=()=>{
   window.location.reload();
 }
@@ -246,13 +305,32 @@ const resetcontent=()=>{
               <Label for="price" className="form-label">Nearest Landmark</Label>
               <Input type="text" onChange={e=>setlandmark(e.target.value)} id="price" placeholder="Enter here" className="rounded-0 form-input" name="price" />
             </div>
-
-
+            <div className="my-3 form-group" style={{display:'flex',justifyContent:'space-between'}}>
+            <div style={{width:'45%'}} >
+              <Label for="title" className="form-label">No.of Bathrooms</Label>
+              <Input type="number" onChange={e=>setbath(e.target.value)} id="rooms" placeholder="Enter here" className="rounded-0 form-input" name="rooms">
+            
+              
+              </Input>
+            </div>
+            <div style={{width:'45%'}} >
+              <Label for="title" className="form-label">No.of Rooms</Label>
+              <Input type="number" onChange={e=>setnrooms(e.target.value)} id="rooms" placeholder="Enter here" className="rounded-0 form-input" name="rooms">
+           
+              
+              </Input>
+            </div>
+            </div>
+            <div className="my-3 form-group">
+              <Label for="image" className="form-label">Description</Label>
+              <Input type="text" onChange={e=>setdescr(e.target.value)} id="image" placeholder="Enter here" className="rounded-0 form-input" name="image" />
+            </div>
+       
            
             <div className="my-3 form-group" style={{display:'flex',justifyContent:'space-between'}}>
             <div style={{width:'30%'}} >
               <Label for="title" className="form-label">Type of Bathrooms</Label>
-              <Input type="select" onChange={e=>setbath(e.target.value)} id="rooms" placeholder="Enter here" className="rounded-0 form-input" name="rooms">
+              <Input type="select" onChange={e=>setnbath(e.target.value)} id="rooms" placeholder="Enter here" className="rounded-0 form-input" name="rooms">
               <option value="" selected disabled hidden>Choose here</option>
                 <option value="Indian">Indian</option>
                 <option value="Western">Western</option>
@@ -261,7 +339,8 @@ const resetcontent=()=>{
               
               </Input>
             </div>
-          
+            
+         
             <div style={{width:'30%'}} >
               <Label for="title" className="form-label">Cooling Facility</Label>
               <Input type="select" onChange={e=>setcooling(e.target.value)} id="rooms" placeholder="Enter here" className="rounded-0 form-input" name="rooms">
@@ -307,8 +386,8 @@ const resetcontent=()=>{
 
            
             <div className="my-3 form-group">
-              <Label for="image" className="form-label">Image(upload google drive link)</Label>
-              <Input type="text" onChange={e=>setimage(e.target.value)} id="image" placeholder="Enter here" className="rounded-0 form-input" name="image" />
+              <Label for="image" className="form-label">Image</Label>
+              <Input type="file" onChange={e=>setimage(e.target.files[0])} id="image" placeholder="Enter here" className="rounded-0 form-input" name="image" />
             </div>
        
             <div className="my-3 form-group">
@@ -318,7 +397,7 @@ const resetcontent=()=>{
            
             <div className="my-3 form-group">
               <Label for="image" className="form-label">Registration Date</Label>
-              <Input type="text" onChange={e=>setlocation(e.target.value)} id="image" placeholder="Enter here" className="rounded-0 form-input" name="image" />
+              <Input type="text" onChange={e=>setRegistration(e.target.value)} id="image" placeholder="Enter here" className="rounded-0 form-input" name="image" />
             </div>
            
             <Container className="text-center">
