@@ -17,8 +17,12 @@ import { BlogMain } from './components/blog/blogmain';
 import {AboutUs} from './components/about/aboutus';
 import { Property } from './components/property/property';
 import 'bootstrap/dist/css/bootstrap.css';
-import Login from './components/login/Login';
+//import Login from './components/login/Login';
 import {Service} from './components/service';
+import Register from './components/Auth/Register';
+import Login from './components/Auth/Login';
+import ForgetPassword from './components/Auth/ForgetPassword';
+import Adminpropertylisting from './components/Adminpropertylisting';
 // import { Footer } from './components/footer';
 function App() {
   return (
@@ -27,7 +31,6 @@ function App() {
       <NavBar />
       {/* <Nav /> */}
         <Routes>
-          <Route path="/login" element={<Login/>} />
           <Route path="/" element={<Layout/>} />
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/blog" element={<Blog />} /> */}
@@ -40,8 +43,11 @@ function App() {
           <Route path="/blog/blogpage-6" element={<BlogPage6 />} />
           <Route path="/service" element={<Service />} />
           <Route path="/property" element={<Property />} />
-          <Route path="/login/" element={<Login />} />
+          <Route path="/register" element={<Register/>} />
+          <Route path="/login/" element={<Login/>} />
+          <Route path="/forget-password" element={<ForgetPassword/>} />
           <Route path="/about/" element={<AboutUs />} />
+          <Route path="/adminpropertylisting" element={<Adminpropertylisting/>} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
