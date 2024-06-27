@@ -21,6 +21,9 @@ import Login from './components/login/Login';
 import {Service} from './components/service';
 // import { Footer } from './components/footer';
 import Adminpropertylisting from './components/Adminpropertylisting';
+import Adminblog from './components/Adminblog';
+import Admindisplayblog from './components/Adimndisplayblog';
+import Showblog from './components/Showblog';
 function App() {
   /* <div className="App">
       <BrowserRouter>
@@ -46,11 +49,22 @@ function App() {
         {/* <Footer /> 
       </BrowserRouter>
     </div>
+     <Adminpropertylisting/>
+      <Adminblog/>
     */
   return (
   
     <>
-       <Adminpropertylisting/>
+   
+   
+   <BrowserRouter>
+   <Routes>
+    <Route path="/" element={<Admindisplayblog/>}/>
+        <Route path="/showblog" element={<Showblog />} />
+        <Route path="/post" element={<Adminblog/>} />
+        </Routes>
+        </BrowserRouter>
+       
    </>
 );
 }

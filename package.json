@@ -19,6 +19,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jodit-react": "^4.1.2",
     "jquery": "^3.7.1",
     "nodemon": "^3.1.0",
     "passport": "^0.7.0",
@@ -32,8 +33,10 @@
     "react-on-screen": "^2.1.1",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
     "react-spring": "^9.7.3",
     "reactstrap": "^9.2.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
