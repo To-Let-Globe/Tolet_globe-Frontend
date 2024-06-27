@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import '../style/Showblog.css'
 import img1 from '../assets/image/blog/blog1/image1.png';
+import { AdminNavbar } from './AdminNavbar';
 export default function Showblog() {
     const [targetBlog, setTargetBlog] = useState({});
   const blogfetch=async()=>{
@@ -39,7 +40,7 @@ export default function Showblog() {
   };
   return (
     <div style={{width:'100vw',height:'100vh',color:'white'}}>
-       
+        <AdminNavbar/>
        <p className='showblogdate'>{formatDate(targetBlog.updatedAt)}</p>
       <h1  className='blogtitle'>{targetBlog.title}</h1>
       <p>By {targetBlog.author}</p>

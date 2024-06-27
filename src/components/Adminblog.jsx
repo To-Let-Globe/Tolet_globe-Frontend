@@ -2,6 +2,7 @@ import { Card, CardBody,Form, Input,Label,Container,Button} from "reactstrap"
 import JoditEditor from "jodit-react";
 import { useRef, useState } from "react";
 import { json } from "react-router-dom";
+import { AdminNavbar } from "./AdminNavbar";
 const Adminblog = () => {
     const editor = useRef(null);
     const [content, setContent] = useState('');
@@ -41,7 +42,7 @@ const resetcon=()=>{
     return(
       
         <div  style={{width:'100vw',height:'100vw'}}>
-       
+        <AdminNavbar/>
             <Card style={{width:'100vw',height:'100vw',backgroundColor:'black',color:'black'}}>
                 <CardBody>
 

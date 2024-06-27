@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import '../style/Admindisplayblog.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { AdminNavbar } from './AdminNavbar';
 
 export default function Adimdisplayblog() {
   var settings = {
@@ -42,7 +43,7 @@ export default function Adimdisplayblog() {
   const shownav = useNavigate();
   const goto = (id) => {
     localStorage.setItem('blogid', id);
-    shownav('/showblog');
+    shownav('/admin/showblog');
   };
 
   const formatDate = (dateString) => {
@@ -81,6 +82,7 @@ export default function Adimdisplayblog() {
 
   return (
     <div style={{ width: '100vw', height: '100vh', overflowY: 'auto' }}>
+       <AdminNavbar/>
       <h1 style={{ textAlign: 'center', marginTop: '5%', marginBottom: '5%' }}>Blogs</h1>
       
       <div className='blog-card-container' style={{ width: '100%', height: '100%', padding: '0', margin: '0', display: 'flex', justifyContent: 'space-between'}}>

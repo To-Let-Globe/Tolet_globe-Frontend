@@ -11,6 +11,7 @@ import {
 import '../style/Adminpropertylisting.css'
 import { setRef } from '@mui/material';
 import axios from 'axios';
+import { AdminNavbar } from './AdminNavbar';
 
 const Adminpropertylisting = () => {
   const editor = useRef(null);
@@ -153,7 +154,7 @@ const resetcontent=()=>{
 }
   return (
     <div className="Adminpropdiv1">
-    
+     <AdminNavbar/>
       <Card className="form-card" style={{backgroundColor:'black',width:'100vw',height:'100vh'}}>
         <CardBody style={{backgroundColor:'black',width:'100%'}}>
           <h1 className="form-title">Add Property Listing</h1>

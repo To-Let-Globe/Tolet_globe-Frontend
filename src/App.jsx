@@ -12,7 +12,6 @@ import  {BlogPage3 } from './components/blog/blogpage3';
 import  {BlogPage4 } from './components/blog/blogpage4';
 import  {BlogPage5 } from './components/blog/blogpage5';
 import  {BlogPage6 } from './components/blog/blogpage6';
-// import { Blog } from './components/blog/blog';
 import { BlogMain } from './components/blog/blogmain';
 import {AboutUs} from './components/about/aboutus';
 import { Property } from './components/property/property';
@@ -24,6 +23,9 @@ import Adminpropertylisting from './components/Adminpropertylisting';
 import Adminblog from './components/Adminblog';
 import Admindisplayblog from './components/Adimndisplayblog';
 import Showblog from './components/Showblog';
+import Dashboard from './components/dashboard';
+import User from './User';
+import Admin from './Admin';
 function App() {
   /* <div className="App">
       <BrowserRouter>
@@ -59,9 +61,27 @@ function App() {
    
    <BrowserRouter>
    <Routes>
-    <Route path="/" element={<Admindisplayblog/>}/>
-        <Route path="/showblog" element={<Showblog />} />
-        <Route path="/post" element={<Adminblog/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/*" element={<Layout/>} />
+          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/blog" element={<BlogMain />} />
+          <Route path="/blog/blogpage-1" element={<BlogPage1 />} />
+          <Route path="/blog/blogpage-2" element={<BlogPage2 />} />
+          <Route path="/blog/blogpage-3" element={<BlogPage3 />} />
+          <Route path="/blog/blogpage-4" element={<BlogPage4 />} />
+          <Route path="/blog/blogpage-5" element={<BlogPage5 />} />
+          <Route path="/blog/blogpage-6" element={<BlogPage6 />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/property" element={<Property />} />
+          <Route path="/login/" element={<Login />} />
+          <Route path="/about/" element={<AboutUs />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/user" element={<User/>} />
+          <Route path="/admin" element={<Admin/>} />
+          <Route path="/admin/property" element={<Adminpropertylisting />} />
+    <Route path="/admin/displayblog" element={<Admindisplayblog/>}/>
+        <Route path="/admin/showblog" element={<Showblog />} />
+        <Route path="/admin/postblog" element={<Adminblog/>} />
         </Routes>
         </BrowserRouter>
        
