@@ -70,13 +70,13 @@ const Flow2 = () => {
       {/* 2nd div started */}
       <div className="md:flex justify-between	pt-8">
         <div className="">
-          <h1>
-            Vijayant khand / PG{" "}
+          <h1 className="text-left">
+            Flat / Sale{" "}
             <span>
               <img src={shild} alt="" className="h-10 w-10 inline" />
             </span>
           </h1>
-          <p className="text-gray-400 block">Gomti Nagar, Block b , lucknow</p>
+          <p className="text-gray-400 block">Chinhat Satrik Road, lucknow</p>
 
           <div className="flex">
             <MdOutlineStarPurple500 className="text-[#FFC700] mt-1" />
@@ -89,12 +89,12 @@ const Flow2 = () => {
 
           <div className="border-1 rounded-lg border-gray-600 flex justify-between pl-3 pr-3">
             <div className="p-1">
-              <p className="block text-gray-400">Monthly rent</p>
-              <h3 className="">Rs. 30000</h3>
+              <p className="block text-gray-400">Price</p>
+              <h3 className="pr-1">Rs. 3050000</h3>
             </div>
             <div className="p-1 text-gray-400">
               <p className="block">Bhk</p>
-              <h3 className="">3 bhk</h3>
+              <h3 className="">2 bhk</h3>
             </div>
             <div className="p-1 text-gray-400">
               <p className="block">Availability</p>
@@ -115,7 +115,7 @@ const Flow2 = () => {
           </div>
           <div className="flex">
             <img src={profile} alt="" className="h-8 w-8 inline" />
-            <p className="pt-1 pl-3 text-gray-800">V K Singh</p>
+            <p className="pt-1 pl-3 text-gray-800">Gupta property</p>
           </div>
           <div>
             <p className="block text-gray-400">+91 ----------</p>
