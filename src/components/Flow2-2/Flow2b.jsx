@@ -122,7 +122,7 @@ const Flow2b = () => {
           <div className="flex flex-wrap max-w-full">
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
-              <p className="inline pb-0 mb-0 font-normal">3 Bedrooms</p>
+              <p className="inline pb-0 mb-0 font-normal">2 Bedrooms</p>
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
@@ -193,7 +193,7 @@ const Flow2b = () => {
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
+                <p className="inline pb-0 mb-0 font-normal">Semi furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">

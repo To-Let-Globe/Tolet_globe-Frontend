@@ -17,7 +17,6 @@ import { MdPets } from "react-icons/md"
 import { BsPeopleFill } from "react-icons/bs"
 import { FaPeopleGroup } from "react-icons/fa6"
 import { WiSmoke } from "react-icons/wi"
-import { TbAirConditioning } from "react-icons/tb"
 import { MdOutlineStarPurple500 } from "react-icons/md"
 import { PiStarThin } from "react-icons/pi"
 import profile from "../../assets/image/Flow2/Ellipse.png"
@@ -121,7 +120,7 @@ const Flow2b = () => {
         >
           <p className="text-black block font-semibold text-xl ">Features</p>
           <div className="flex flex-wrap max-w-full">
-            <div className="border flex p-2 rounded-lg border-black mr-8">
+            {/* <div className="border flex p-2 rounded-lg border-black mr-8">
               <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">2 Bedrooms</p>
             </div>
@@ -129,7 +128,7 @@ const Flow2b = () => {
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <MdOutlineBathroom className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">2 Bathrooms</p>
-            </div>
+            </div> */}
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <IoTabletLandscape className="h-6 w-6 mr-4 text-black bg-white" />
@@ -141,17 +140,12 @@ const Flow2b = () => {
               <p className="inline pb-0 mb-0 font-normal">Parking</p>
             </div>
 
-            <div className="border flex p-2 rounded-lg border-black mr-8">
+            {/* <div className="border flex p-2 rounded-lg border-black mr-8">
               <CiMobile4 className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">
                 Appliances - TV, Refrigerator
               </p>
-            </div>
-
-            <div className="border flex p-2 rounded-lg border-black mr-8">
-              <TbAirConditioning className="h-6 w-6 mr-4 text-black bg-white" />
-              <p className="inline pb-0 mb-0 font-normal">AC Rooms</p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -159,10 +153,9 @@ const Flow2b = () => {
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">About</p>
             <p className=" text-left mb-0">
-              Brand New!! Residential 2 BHK Semi Furnished Flat at 4th floor
-              with Western bathrooms and Car Parking facility great for nuclear
-              family or extra income. Pets are allowed and price is negotiable
-              located at Chinhat Satrik road, Near Indra Nahar, Lucknow.
+              Brand New!! Commercial 1 BHK non Furnished shop at ground floor
+              with Car Parking facility great for business men or extra income.
+              Price is negotiable located at Pink City, Near Mahan Road Lucknow.
             </p>
           </div>
         </div>
@@ -177,28 +170,13 @@ const Flow2b = () => {
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <CgGym className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Gym</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
-                <LuFlower2 className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Garden</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
                 <FaHammer className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Maintainance</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <GiMicrophone className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Club House</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
+                <p className="inline pb-0 mb-0 font-normal">Non furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
@@ -217,23 +195,10 @@ const Flow2b = () => {
             </p>
             <div className="flex flex-wrap max-w-full">
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <PiStudentBold className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Student Friendly</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdPets className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Pets Allowed</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
                 <FaPeopleGroup className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Guests Allowed</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
-                <BsPeopleFill className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Families allowed</p>
+                <p className="inline pb-0 mb-0 font-normal">
+                  Business men friendly
+                </p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">

@@ -71,12 +71,14 @@ const Flow2 = () => {
       <div className="md:flex justify-between	pt-8">
         <div className="">
           <h1 className="text-left">
-            Flat / Sale{" "}
+            Shop / Rent{" "}
             <span>
               <img src={shild} alt="" className="h-10 w-10 inline" />
             </span>
           </h1>
-          <p className="text-gray-400 block">Chinhat Satrik Road, lucknow</p>
+          <p className="text-gray-400 block">
+            Pink City, Near Mahan Road Lucknow
+          </p>
 
           <div className="flex">
             <MdOutlineStarPurple500 className="text-[#FFC700] mt-1" />
@@ -84,17 +86,17 @@ const Flow2 = () => {
             <MdStarOutline className="text-[#FFFEFE] mt-1" />
             <MdStarOutline className="text-[#FFFEFE] mt-1" />
             <MdStarOutline className="text-[#FFFEFE] mt-1" />
-            <p className="ml-2 text-gray-400">12 (Reviews)</p>
+            <p className="ml-2 text-gray-400">18 (Reviews)</p>
           </div>
 
           <div className="border-1 rounded-lg border-gray-600 flex justify-between pl-3 pr-3">
             <div className="p-1">
-              <p className="block text-gray-400">Price</p>
-              <h3 className="pr-1">Rs. 3050000</h3>
+              <p className="block text-gray-400">Monthly rent</p>
+              <h3 className="">Rs. 3500</h3>
             </div>
             <div className="p-1 text-gray-400">
               <p className="block">Bhk</p>
-              <h3 className="">2 bhk</h3>
+              <h3 className="">1 bhk</h3>
             </div>
             <div className="p-1 text-gray-400">
               <p className="block">Availability</p>
@@ -115,7 +117,7 @@ const Flow2 = () => {
           </div>
           <div className="flex">
             <img src={profile} alt="" className="h-8 w-8 inline" />
-            <p className="pt-1 pl-3 text-gray-800">Gupta property</p>
+            <p className="pt-1 pl-3 text-gray-800">Devendra kumar</p>
           </div>
           <div>
             <p className="block text-gray-400">+91 ----------</p>

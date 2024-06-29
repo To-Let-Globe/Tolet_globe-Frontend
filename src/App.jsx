@@ -25,6 +25,8 @@ import ForgetPassword from "./components/Auth/ForgetPassword"
 import Adminpropertylisting from "./components/Adminpropertylisting"
 import Flow2 from "./components/Flow2/Flow2a"
 import Flow2_2 from "./components/Flow2-2/Flow2a"
+import Flow2_3 from "./components/Flow2-7/Flow2a"
+
 // import { Footer } from './components/footer';
 function App() {
   return (
@@ -54,7 +56,7 @@ function App() {
             element={<Adminpropertylisting />}
           />
           <Route path="/flow2/" element={<Flow2 />} />
-          <Route path="/flow2/2" element={<Flow2_2 />} />
+          <Route path="/flow2/2" element={<Flow2_3 />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

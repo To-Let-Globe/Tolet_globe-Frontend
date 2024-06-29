@@ -17,7 +17,6 @@ import { MdPets } from "react-icons/md"
 import { BsPeopleFill } from "react-icons/bs"
 import { FaPeopleGroup } from "react-icons/fa6"
 import { WiSmoke } from "react-icons/wi"
-import { TbAirConditioning } from "react-icons/tb"
 import { MdOutlineStarPurple500 } from "react-icons/md"
 import { PiStarThin } from "react-icons/pi"
 import profile from "../../assets/image/Flow2/Ellipse.png"
@@ -147,11 +146,6 @@ const Flow2b = () => {
                 Appliances - TV, Refrigerator
               </p>
             </div>
-
-            <div className="border flex p-2 rounded-lg border-black mr-8">
-              <TbAirConditioning className="h-6 w-6 mr-4 text-black bg-white" />
-              <p className="inline pb-0 mb-0 font-normal">AC Rooms</p>
-            </div>
           </div>
         </div>
 
@@ -159,10 +153,11 @@ const Flow2b = () => {
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">About</p>
             <p className=" text-left mb-0">
-              Brand New!! Residential 2 BHK Semi Furnished Flat at 4th floor
-              with Western bathrooms and Car Parking facility great for nuclear
-              family or extra income. Pets are allowed and price is negotiable
-              located at Chinhat Satrik road, Near Indra Nahar, Lucknow.
+              Brand New!! Residential 2 BHK Semi Furnished Flat at ground floor
+              with both Indian and Western bathrooms and Car Parking facility
+              great for nuclear family or extra income. Pets are allowed and
+              price is negotiable located at Keshav Nagar, Sitapur Road, near
+              surbhi school, Lucknow.
             </p>
           </div>
         </div>
@@ -198,7 +193,7 @@ const Flow2b = () => {
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
+                <p className="inline pb-0 mb-0 font-normal">Semi furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
@@ -219,11 +214,6 @@ const Flow2b = () => {
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <PiStudentBold className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Student Friendly</p>
-              </div>
-
-              <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdPets className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Pets Allowed</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">

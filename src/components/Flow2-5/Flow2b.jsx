@@ -147,11 +147,6 @@ const Flow2b = () => {
                 Appliances - TV, Refrigerator
               </p>
             </div>
-
-            <div className="border flex p-2 rounded-lg border-black mr-8">
-              <TbAirConditioning className="h-6 w-6 mr-4 text-black bg-white" />
-              <p className="inline pb-0 mb-0 font-normal">AC Rooms</p>
-            </div>
           </div>
         </div>
 
@@ -159,10 +154,10 @@ const Flow2b = () => {
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">About</p>
             <p className=" text-left mb-0">
-              Brand New!! Residential 2 BHK Semi Furnished Flat at 4th floor
-              with Western bathrooms and Car Parking facility great for nuclear
-              family or extra income. Pets are allowed and price is negotiable
-              located at Chinhat Satrik road, Near Indra Nahar, Lucknow.
+              Brand New!! Residential 2 BHK Semi Furnished House at ground floor
+              with both indian and Western bathrooms, great for nuclear family
+              or extra income. Pets are allowed and price is negotiable located
+              at chinnat sarik road, Lucknow.
             </p>
           </div>
         </div>
@@ -198,7 +193,7 @@ const Flow2b = () => {
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
+                <p className="inline pb-0 mb-0 font-normal">Semi furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
