@@ -1,6 +1,22 @@
 import React, { useEffect, useState } from "react"
 import { MdBedroomParent } from "react-icons/md"
 import map from "../../assets/image/Flow2/map.png"
+import { MdOutlineBathroom } from "react-icons/md"
+import { IoTabletLandscape } from "react-icons/io5"
+import { LuParkingCircle } from "react-icons/lu"
+import { CiMobile4 } from "react-icons/ci"
+import { MdSecurity } from "react-icons/md"
+import { CgGym } from "react-icons/cg"
+import { LuFlower2 } from "react-icons/lu"
+import { FaHammer } from "react-icons/fa6"
+import { GiMicrophone } from "react-icons/gi"
+import { GiFamilyHouse } from "react-icons/gi"
+import { MdOutlineAvTimer } from "react-icons/md"
+import { PiStudentBold } from "react-icons/pi"
+import { MdPets } from "react-icons/md"
+import { BsPeopleFill } from "react-icons/bs"
+import { FaPeopleGroup } from "react-icons/fa6"
+import { WiSmoke } from "react-icons/wi"
 import { MdOutlineStarPurple500 } from "react-icons/md"
 import { PiStarThin } from "react-icons/pi"
 import profile from "../../assets/image/Flow2/Ellipse.png"
@@ -78,7 +94,7 @@ const Flow2b = () => {
         >
           Regulations
         </button>
-        <button
+        {/* <button
           className={`${buttonClasses} ${
             selectedButton === "Location" ? "underline decoration-teal-500" : ""
           }`}
@@ -93,7 +109,7 @@ const Flow2b = () => {
           onClick={() => handleButtonClick("Reviews")}
         >
           Reviews
-        </button>
+        </button> */}
       </div>
 
       <div className="mb-2">
@@ -110,22 +126,22 @@ const Flow2b = () => {
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
-              <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+              <MdOutlineBathroom className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">2 Bathrooms</p>
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
-              <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+              <IoTabletLandscape className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">1200 sq ft</p>
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
-              <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+              <LuParkingCircle className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">Parking</p>
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
-              <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+              <CiMobile4 className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">
                 Appliances - TV, Refrigerator
               </p>
@@ -137,13 +153,11 @@ const Flow2b = () => {
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">About</p>
             <p className=" text-left mb-0">
-              Brand New!! Remington Townhome: 3 Beds,Double Garage & Driveway (4
-              Spaces),9' Ceilings Across 3 Levels,Open Concept Dining/Great
-              Room,Abundant Natural Light,Pot Lights. Spacious Private
-              Terrace,Hardwood Flooring on the Main Floor,Primary Bedroom with
-              Walk-In Closet & Private Balcony Access. Conveniently Located near
-              Markville Mall,Hwy 7/407. Ground Floor Bedroom & 3 pcs Washroom
-              great for in-laws or extra income
+              Brand New!! Residential 2 BHK Semi Furnished Flat at 4th floor
+              with both Indian and Western bathrooms and Car Parking facility
+              great for nuclear family or extra income. Pets are allowed and
+              price is negotiable located at D 801 the woods apartment naubasta
+              Deva road chinhat Lucknow .
             </p>
           </div>
         </div>
@@ -153,37 +167,37 @@ const Flow2b = () => {
             <p className="text-black block font-semibold text-xl">Amenities</p>
             <div className="flex flex-wrap max-w-full">
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <MdSecurity className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Security</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <CgGym className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Gym</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <LuFlower2 className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Garden</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <FaHammer className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Maintainance</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <GiMicrophone className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Club House</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <MdOutlineAvTimer className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">24 hrs backup</p>
               </div>
             </div>
@@ -198,27 +212,27 @@ const Flow2b = () => {
             </p>
             <div className="flex flex-wrap max-w-full">
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <PiStudentBold className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Student Friendly</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <MdPets className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Pets Allowed</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <FaPeopleGroup className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Guests Allowed</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <BsPeopleFill className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Families allowed</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
-                <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
+                <WiSmoke className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Smokers allowed</p>
               </div>
             </div>
@@ -226,7 +240,7 @@ const Flow2b = () => {
         </div>
 
         {/* Location section */}
-        <div className={`pb-4 ${selectComp > 5 ? "hidden" : ""}`}>
+        {/* <div className={`pb-4 ${selectComp > 5 ? "hidden" : ""}`}>
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">Location</p>
 
@@ -240,7 +254,6 @@ const Flow2b = () => {
             <div className="flex">
               <div className="w-4/5 mb-2">
                 <div className="bg-red-200 w-full">
-                  {/* for location map */}
                   <img src={map} alt="" className="bg-cover max-h-72" />
                 </div>
               </div>
@@ -288,7 +301,7 @@ const Flow2b = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Review section */}
         {/* 
