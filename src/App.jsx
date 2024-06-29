@@ -23,7 +23,10 @@ import Register from './components/Auth/Register';
 import Login from './components/Auth/Login';
 import ForgetPassword from './components/Auth/ForgetPassword';
 import Adminpropertylisting from './components/Adminpropertylisting';
-// import { Footer } from './components/footer';
+import Listing from './components/property/Listing';
+import NotFound from './components/property/NotFound';
+
+
 function App() {
   return (
    <div className="App">
@@ -48,6 +51,8 @@ function App() {
           <Route path="/forget-password" element={<ForgetPassword/>} />
           <Route path="/about/" element={<AboutUs />} />
           <Route path="/adminpropertylisting" element={<Adminpropertylisting/>} />
+          <Route path="/listing" element={<Listing/>} />
+          <Route path="/nf" element={<NotFound/>} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
