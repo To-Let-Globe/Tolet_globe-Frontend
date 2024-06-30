@@ -1,36 +1,29 @@
 import React,{useEffect,useState} from 'react'
 import '../style/Showblog.css'
 import img1 from '../assets/image/blog/blog1/image1.png';
+import axios from "axios";
+import DOMPurify from 'dompurify';
 import { AdminNavbar } from './AdminNavbar';
 export default function Showblog() {
     const [targetBlog, setTargetBlog] = useState({});
-  const blogfetch=async()=>{
-    try{
-         const response=await fetch(`https://tolet-globe-backend.onrender.com/blogs/`,{
-          method:'GET',
-          headers:{
-            'Content-Type':'application/json',
-          },
-         });
-         const data=await response.json();
-         if(response.status===200){
-          const targetBlogData = data.find(blog => blog._id === localStorage.getItem('blogid'));
-          if (targetBlogData) {
-              console.log(targetBlogData);
-            setTargetBlog(targetBlogData);
-          }
-         }else{
-          console.log(data);
-         }
-
-    }catch(error){
-      console.error(error);
-    }
-  }
-  useEffect(() => {
-    blogfetch();
-  }, [])
   
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://tolet-globe-backend.onrender.com/blogs/")
+      .then((response) => {
+       
+        const targetBlogData = response.data.find(blog => blog._id === localStorage.getItem('blogid'));
+        if (targetBlogData) {
+            console.log(targetBlogData);
+          setTargetBlog(targetBlogData);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching blogs:", error);
+      });
+  }, []);
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const day = date.getDate();
@@ -40,14 +33,18 @@ export default function Showblog() {
   };
   return (
     <div style={{width:'100vw',height:'100vh',color:'white'}}>
-        <AdminNavbar/>
+         <AdminNavbar/>
        <p className='showblogdate'>{formatDate(targetBlog.updatedAt)}</p>
       <h1  className='blogtitle'>{targetBlog.title}</h1>
       <p>By {targetBlog.author}</p>
       
       <div className='showblogcontent'>
-      <img src={img1} className="showblogimage" style={{width:'80%',paddingBottom:'2%',marginLeft:'10%'}}></img>
-        {targetBlog.content}
+      <img src={targetBlog.img} className="showblogimage" style={{width:'80%',paddingBottom:'2%',marginLeft:'10%'}}></img>
+      <div
+  dangerouslySetInnerHTML={{
+    __html: DOMPurify.sanitize(targetBlog.content?.replace(/^"|"$/g, '').replace(/--/g, '-')),
+  }}
+/>
       </div>
     </div>
   )

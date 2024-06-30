@@ -154,7 +154,7 @@ const resetcontent=()=>{
 }
   return (
     <div className="Adminpropdiv1">
-     <AdminNavbar/>
+      <AdminNavbar/>
       <Card className="form-card" style={{backgroundColor:'black',width:'100vw',height:'100vh'}}>
         <CardBody style={{backgroundColor:'black',width:'100%'}}>
           <h1 className="form-title">Add Property Listing</h1>

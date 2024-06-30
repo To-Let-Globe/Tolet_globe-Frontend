@@ -9,9 +9,10 @@ const Admin=()=> {
   return (
     <div>
     
-      <Adminblog/>
+    
        <Routes>
-       <Route path="/admin/displayblog" element={<Admindisplayblog/>}/>
+     
+       <Route path="/admin/" element={<Admindisplayblog/>}/>
           <Route path="/admin/postblog" element={<Adminblog />} />
           <Route path="/admin/property" element={<Adminpropertylisting />} />
           <Route path="/admin/showblog" element={<Showblog />} />
