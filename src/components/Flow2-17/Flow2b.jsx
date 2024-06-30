@@ -120,15 +120,15 @@ const Flow2b = () => {
         >
           <p className="text-black block font-semibold text-xl ">Features</p>
           <div className="flex flex-wrap max-w-full">
-            {/* <div className="border flex p-2 rounded-lg border-black mr-8">
+            <div className="border flex p-2 rounded-lg border-black mr-8">
               <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
-              <p className="inline pb-0 mb-0 font-normal">2 Bedrooms</p>
+              <p className="inline pb-0 mb-0 font-normal">1 Bedrooms</p>
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <MdOutlineBathroom className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">2 Bathrooms</p>
-            </div> */}
+            </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <IoTabletLandscape className="h-6 w-6 mr-4 text-black bg-white" />
@@ -153,10 +153,10 @@ const Flow2b = () => {
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">About</p>
             <p className=" text-left mb-0">
-              Brand New!! Commercial 1 BHK non Furnished shop at ground floor
-              with a indian washroom and Car Parking facility great for business
-              men or extra income. Price is negotiable located at Pink City,
-              Near Mahan Road Lucknow.
+              Brand New!! Commercial 1 BHK Fully Furnished shop at ground floor
+              with both indian and western washroon, great for business men or
+              extra income. Price is negotiable located at 15/2 Immant nagar
+              Lucknow.
             </p>
           </div>
         </div>
@@ -177,7 +177,7 @@ const Flow2b = () => {
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Non furnished</p>
+                <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
@@ -196,10 +196,23 @@ const Flow2b = () => {
             </p>
             <div className="flex flex-wrap max-w-full">
               <div className="border flex p-2 rounded-lg border-black mr-8">
+                <PiStudentBold className="h-6 w-6 mr-4 text-black bg-white" />
+                <p className="inline pb-0 mb-0 font-normal">Student Friendly</p>
+              </div>
+
+              <div className="border flex p-2 rounded-lg border-black mr-8">
+                <MdPets className="h-6 w-6 mr-4 text-black bg-white" />
+                <p className="inline pb-0 mb-0 font-normal">Pets Allowed</p>
+              </div>
+
+              <div className="border flex p-2 rounded-lg border-black mr-8">
                 <FaPeopleGroup className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">
-                  Business men friendly
-                </p>
+                <p className="inline pb-0 mb-0 font-normal">Guests Allowed</p>
+              </div>
+
+              <div className="border flex p-2 rounded-lg border-black mr-8">
+                <BsPeopleFill className="h-6 w-6 mr-4 text-black bg-white" />
+                <p className="inline pb-0 mb-0 font-normal">Families allowed</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
