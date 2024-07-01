@@ -11,13 +11,13 @@
     top:35%;
     color: #ffffff !important;
     transition: all 1.5s ease-in-out !important;
+  
   }
   .scrolled .tagline{
-    opacity: 0;
+    opacity: 0 !important;
     font-size: 10px;
     transform: translate(-200px,180px) !important;
     letter-spacing: 0;
-    opacity: 0;
     height: 70vh;
   }  
   .headline {
@@ -41,6 +41,7 @@
     top: 10% !important;
     color: hsl(0, 0%, 100%) !important;
     transition: all 1.5s ease-in-out !important;
+    
   }
   
   .scrolled .tagline2{
@@ -48,12 +49,12 @@
     left: 30%;
     right: auto;
     margin-bottom: 20px !important;
-    transform: translate(-58px, -15px); 
+    transform: translate(-190px, -15px); 
     top:10% !important;
   }
   .headline2 {
     font-size: 10px;
-    opacity: 0;
+    opacity: 0 !important;
     position: absolute;
     justify-content: center !important;
     top: 5% !important;
@@ -61,11 +62,11 @@
     transition: all 1.5s ease-in-out !important;
   }
   .scrolled .headline2{
-    opacity: 1;
+    opacity: 1 !important;
     left: 35%;
     right: auto;
     top: 11% !important;
-    transform: translate(-59px, 15px); 
+    transform: translate(-415px, 15px) !important; 
   }
 
   .input-bar {

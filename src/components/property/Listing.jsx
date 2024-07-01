@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import './../../style/property/listing.css';
 import p1 from '../../assets/image/property/property-1.jpg'
 import author from "../../assets/image/property/author.jpg"
@@ -18,9 +19,10 @@ import a7 from '../../assets/image/property/author7.jpg'
 import a8 from '../../assets/image/property/author8.jpg'
 import { Footer } from '../footer';
 const Listing = () => {
+  const navigate = useNavigate();
   return (
     <>
-    
+     
       <section className="property" id="property">
 
         <div className="container">
@@ -127,7 +129,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a1")} >
                       Explore
                     </button>
 
@@ -162,7 +164,7 @@ const Listing = () => {
                     <button className="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
 
-                      <address>Gomb Nagar,lucknow</address>
+                      <address>Munshipulia opposite Ishwar Dham Mandir, Lucknow</address>
                     </button>
 
                     <button className="banner-actions-btn">
@@ -243,7 +245,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a2")}>
                       Explore
                     </button>
 
@@ -363,7 +365,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a3")}>
                       Explore
                     </button>
 
@@ -482,7 +484,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a4")}>
                       Explore
                     </button>
 
@@ -612,7 +614,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a5")}>
                       Explore
                     </button>
 
@@ -728,7 +730,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a6")}>
                       Explore
                     </button>
 
@@ -847,7 +849,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a7")}>
                       Explore
                     </button>
 
@@ -966,7 +968,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn">
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a8")}>
                       Explore
                     </button>
 

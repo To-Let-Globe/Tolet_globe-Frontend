@@ -1,9 +1,6 @@
 import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { NavBar } from "./components/navbar"
-// import { Nav } from './components/nav';
-
-// import { Home } from './components/home/home';
 import { Layout } from "./components/layout"
 import { Contact } from "./components/contact/contactus"
 import { BlogPage1 } from "./components/blog/blogpage1"
@@ -12,12 +9,10 @@ import { BlogPage3 } from "./components/blog/blogpage3"
 import { BlogPage4 } from "./components/blog/blogpage4"
 import { BlogPage5 } from "./components/blog/blogpage5"
 import { BlogPage6 } from "./components/blog/blogpage6"
-// import { Blog } from './components/blog/blog';
 import { BlogMain } from "./components/blog/blogmain"
 import { AboutUs } from "./components/about/aboutus"
 import { Property } from "./components/property/property"
 import "bootstrap/dist/css/bootstrap.css"
-//import Login from './components/login/Login';
 import {Service} from './components/service';
 import Register from './components/Auth/Register';
 import Login from './components/Auth/Login';
@@ -25,12 +20,6 @@ import ForgetPassword from './components/Auth/ForgetPassword';
 import Adminpropertylisting from './components/Adminpropertylisting';
 import Listing from './components/property/Listing';
 import NotFound from './components/property/NotFound';
-import Dashboard from "./components/dashboard"
-import User from "./User"
-import Admin from "./Admin"
-import Adimdisplayblog from "./components/Adimndisplayblog"
-import Adminblog from "./components/Adminblog"
-import Showblog from "./components/Showblog"
 import Flow2a from "./components/property/Flow2-1/Flow2a1"
 import Flow22 from "./components/property/Flow2-2/Flow2a2"
 import Flow2c from "./components/property/Flow2-3/Flow2a3"
@@ -42,11 +31,11 @@ import Flow2h from "./components/property/Flow2-8/Flow2a8"
 
 
 
-function App() {
+const User = () =>{
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavBar />
+      
+      
         {/* <Nav /> */}
         <Routes>
           <Route path="/" element={<Layout />} />
@@ -68,14 +57,7 @@ function App() {
           <Route path="/adminpropertylisting" element={<Adminpropertylisting/>} />
           <Route path="/listing" element={<Listing/>} />
           <Route path="/nf" element={<NotFound/>} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/user" element={<User/>} />
-          <Route path="/admin" element={<Admin/>} />
-          <Route path="/admin/property" element={<Adminpropertylisting />} />
-          <Route path="/admin/" element={<Adimdisplayblog/>}/>
-        <Route path="/admin/showblog" element={<Showblog />} />
-        <Route path="/admin/postblog" element={<Adminblog/>} />
-        <Route path='/flow2a1' element={<Flow2a/>} />
+          <Route path='/flow2a1' element={<Flow2a/>} />
           <Route path='/flow2a2' element={<Flow22/>} />
           <Route path='/flow2a3' element={<Flow2c/>} />
           <Route path='/flow2a4' element={<Flow2d/>} />
@@ -86,9 +68,14 @@ function App() {
 
         </Routes>
         {/* <Footer /> */}
-      </BrowserRouter>
+      
     </div>
   )
 }
 
-export default App
+export default User
+
+
+
+
+

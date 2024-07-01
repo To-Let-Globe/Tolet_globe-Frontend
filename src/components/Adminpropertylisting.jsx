@@ -8,7 +8,8 @@ import {
   Container,
   Button,
 } from 'reactstrap';
-import '../style/Adminpropertylisting.css'
+import '../style/Adminpropertylisting.css';
+import { AdminNavbar } from './AdminNavbar';
 //import { setRef } from '@mui/material';
 //import axios from 'axios';
 
@@ -152,7 +153,7 @@ const resetcontent=()=>{
 }
   return (
     <div className="Adminpropdiv1">
-    
+      <AdminNavbar/>
       <Card className="form-card" style={{backgroundColor:'black',width:'100vw',height:'100vh'}}>
         <CardBody style={{backgroundColor:'black',width:'100%'}}>
           <h1 className="form-title">Add Property Listing</h1>
@@ -391,15 +392,13 @@ const resetcontent=()=>{
               <Input type="text" onChange={e=>setlocation(e.target.value)} id="image" placeholder="Enter here" className="rounded-0 form-input" name="image" />
             </div>*/}
            
-            <div className="my-3 form-group">
             
-            </div>
            
             <Container className="text-center">
               <button type="button" onClick={upload} className="rounded-0 bg-success form-button">
                 Submit
               </button>
-              <button onClick={resetcontent} className="rounded-0 ms-2 bg-danger form-button">
+              <button onClick={resetcontent} className="rounded-0 ms-10 bg-danger form-button">
                 Reset Content
               </button>
             </Container>

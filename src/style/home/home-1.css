@@ -93,7 +93,7 @@ h6{
 
 .scrolled .tagline2{
   opacity: 1;
-  transform: translateX(-51%);
+  transform: translateX(-60%);
   top: 30%;
 }
 
@@ -116,7 +116,7 @@ h6{
   position: absolute;
   color: white;
   top: 40%;
-  transform: translateX(-29.5%);
+  transform: translateX(-32%);
 }
 
 .input-bar {

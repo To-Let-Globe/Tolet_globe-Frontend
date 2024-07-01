@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { MdBedroomParent } from "react-icons/md"
-import map from "../../assets/image/Flow2/map.png"
+//import map from "../../assets/image/Flow2/map.png"
 import { MdOutlineBathroom } from "react-icons/md"
 import { IoTabletLandscape } from "react-icons/io5"
 import { LuParkingCircle } from "react-icons/lu"
@@ -17,10 +17,11 @@ import { MdPets } from "react-icons/md"
 import { BsPeopleFill } from "react-icons/bs"
 import { FaPeopleGroup } from "react-icons/fa6"
 import { WiSmoke } from "react-icons/wi"
+import { TbAirConditioning } from "react-icons/tb"
 import { MdOutlineStarPurple500 } from "react-icons/md"
 import { PiStarThin } from "react-icons/pi"
-import profile from "../../assets/image/Flow2/Ellipse.png"
-import Popup from "./Popup"
+//import profile from "../../assets/image/Flow2/Ellipse.png"
+//import Popup from "./Popup"
 
 const Flow2b = () => {
   const [selectedButton, setSelectedButton] = useState("")
@@ -122,7 +123,7 @@ const Flow2b = () => {
           <div className="flex flex-wrap max-w-full">
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <MdBedroomParent className="h-6 w-6 mr-4 text-black bg-white" />
-              <p className="inline pb-0 mb-0 font-normal">3 Bedrooms</p>
+              <p className="inline pb-0 mb-0 font-normal">2 Bedrooms</p>
             </div>
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
@@ -130,10 +131,10 @@ const Flow2b = () => {
               <p className="inline pb-0 mb-0 font-normal">2 Bathrooms</p>
             </div>
 
-            <div className="border flex p-2 rounded-lg border-black mr-8">
+            {/*<div className="border flex p-2 rounded-lg border-black mr-8">
               <IoTabletLandscape className="h-6 w-6 mr-4 text-black bg-white" />
               <p className="inline pb-0 mb-0 font-normal">1200 sq ft</p>
-            </div>
+            </div>*/}
 
             <div className="border flex p-2 rounded-lg border-black mr-8">
               <LuParkingCircle className="h-6 w-6 mr-4 text-black bg-white" />
@@ -146,6 +147,11 @@ const Flow2b = () => {
                 Appliances - TV, Refrigerator
               </p>
             </div>
+
+            <div className="border flex p-2 rounded-lg border-black mr-8">
+              <TbAirConditioning className="h-6 w-6 mr-4 text-black bg-white" />
+              <p className="inline pb-0 mb-0 font-normal">AC Rooms</p>
+            </div>
           </div>
         </div>
 
@@ -153,11 +159,9 @@ const Flow2b = () => {
           <div className={`bg-white w-full rounded-lg p-3`}>
             <p className="text-black block font-semibold text-xl">About</p>
             <p className=" text-left mb-0">
-              Brand New!! Residential 2 BHK Semi Furnished Flat at 4th floor
-              with both Indian and Western bathrooms and Car Parking facility
-              great for nuclear family or extra income. Pets are allowed and
-              price is negotiable located at D 801 the woods apartment naubasta
-              Deva road chinhat Lucknow .
+              Brand New!! Residential 1 BHK Semi Furnished House at 2nd floor
+              with both Indian and Western bathroom  and Car Parking facility great for nuclear
+              family or extra income. Pets are allowed located at Sarojini Nagar Kanpur highway and Bijnor road  ,Lucknow.
             </p>
           </div>
         </div>
@@ -171,7 +175,7 @@ const Flow2b = () => {
                 <p className="inline pb-0 mb-0 font-normal">Security</p>
               </div>
 
-              <div className="border flex p-2 rounded-lg border-black mr-8">
+              {/*<div className="border flex p-2 rounded-lg border-black mr-8">
                 <CgGym className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Gym</p>
               </div>
@@ -179,21 +183,21 @@ const Flow2b = () => {
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <LuFlower2 className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Garden</p>
-              </div>
+              </div>*/}
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <FaHammer className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Maintainance</p>
               </div>
 
-              <div className="border flex p-2 rounded-lg border-black mr-8">
+              {/*<div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiMicrophone className="h-6 w-6 mr-4 text-black bg-white" />
                 <p className="inline pb-0 mb-0 font-normal">Club House</p>
-              </div>
+              </div>*/}
 
               <div className="border flex p-2 rounded-lg border-black mr-8">
                 <GiFamilyHouse className="h-6 w-6 mr-4 text-black bg-white" />
-                <p className="inline pb-0 mb-0 font-normal">Fully furnished</p>
+                <p className="inline pb-0 mb-0 font-normal">Semi furnished</p>
               </div>
 
               <div className="border flex p-2 rounded-lg border-black mr-8">

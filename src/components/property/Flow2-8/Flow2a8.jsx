@@ -1,18 +1,18 @@
 import React from "react"
 import Flow2b from "./Flow2b"
-import img1 from "../../assets/image/Flow2/img1.png"
-import img2 from "../../assets/image/Flow2/img2.png"
-import shild from "../../assets/image/Flow2/shield.png"
+import img1 from "../../../assets/image/property/property-8.jpg"
+//import img2 from "../../assets/image/Flow2/img2.png"
+import shild from "../../../assets/image/property/shield.png"
 import { MdOutlineStarPurple500 } from "react-icons/md"
 import { MdStarOutline } from "react-icons/md"
 import { CiShare2 } from "react-icons/ci"
 import { IoIosAdd } from "react-icons/io"
 import { CiHeart } from "react-icons/ci"
-import profile from "../../assets/image/Flow2/profile.png"
-import fav from "../../assets/image/Flow2/Vector.png"
-import { Footer } from "../footer"
+import profile from "../../../assets/image/property/author8.jpg"
+import fav from "../../../assets/image/property/Vector.png"
+import { Footer } from "../../footer"
 
-const Flow2 = () => {
+const Flow2h = () => {
   return (
     <div className="pl-2 pr-4 mx-4">
       {/* image section */}
@@ -71,13 +71,13 @@ const Flow2 = () => {
       <div className="md:flex justify-between	pt-8">
         <div className="">
           <h1 className="text-left">
-            Flat / Rent{" "}
+            Shop / Rent{" "}
             <span>
               <img src={shild} alt="" className="h-10 w-10 inline" />
             </span>
           </h1>
           <p className="text-gray-400 block">
-            D 801 the woods apartment naubasta Deva road chinhat Lucknow
+            Pink City, Near Mahan Road Lucknow
           </p>
 
           <div className="flex">
@@ -86,17 +86,17 @@ const Flow2 = () => {
             <MdStarOutline className="text-[#FFFEFE] mt-1" />
             <MdStarOutline className="text-[#FFFEFE] mt-1" />
             <MdStarOutline className="text-[#FFFEFE] mt-1" />
-            <p className="ml-2 text-gray-400">12 (Reviews)</p>
+            <p className="ml-2 text-gray-400">18 (Reviews)</p>
           </div>
 
           <div className="border-1 rounded-lg border-gray-600 flex justify-between pl-3 pr-3">
             <div className="p-1">
               <p className="block text-gray-400">Monthly rent</p>
-              <h3 className="">Rs. 12000</h3>
+              <h3 className="">Rs. 3,500</h3>
             </div>
             <div className="p-1 text-gray-400">
               <p className="block">Bhk</p>
-              <h3 className="">2 bhk</h3>
+              <h3 className="">1 bhk</h3>
             </div>
             <div className="p-1 text-gray-400">
               <p className="block">Availability</p>
@@ -117,10 +117,10 @@ const Flow2 = () => {
           </div>
           <div className="flex">
             <img src={profile} alt="" className="h-8 w-8 inline" />
-            <p className="pt-1 pl-3 text-gray-800">Deepti rastogi</p>
+            <p className="pt-1 pl-3 text-gray-800">Devendra Kumar</p>
           </div>
           <div>
-            <p className="block text-gray-400">+91 ----------</p>
+            <p className="block text-gray-400">+91 7355316016</p>
           </div>
           <div className="rounded-lg" style={{ backgroundColor: "#40B5A8" }}>
             <button className="flex w-full justify-evenly p-2 font-semibold">
@@ -138,4 +138,4 @@ const Flow2 = () => {
   )
 }
 
-export default Flow2
+export default Flow2h
