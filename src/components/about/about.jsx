@@ -10,6 +10,8 @@ export const About = () => {
     <div className="AboutUS-Container">
       <h2>About Us</h2>
       <div className="about-container">
+
+        {/* Row for 'Who We Are' section */}
         <Row className="rows-center">
           <Col md={6} className="text-center"> 
             <h3 className="heading-color">Who We Are</h3>
@@ -18,14 +20,15 @@ export const About = () => {
               contact each other with ZERO brokerage.
             </p>
           </Col>
-          <Col md={4} className="text-center "> {/* Center image horizontally */}
-            <img src={image1} alt="image1" />
+          <Col md={4} className="text-center">
+            <img src={image1} alt="Who We Are" />
           </Col>
         </Row>
 
-        <Row className="rows-center midc" >
-          <Col md={4} className="text-center  mcol1">
-            <img src={image2} alt="image2" />
+        {/* Row for 'Our Vision' section */}
+        <Row className="rows-center midc">
+          <Col md={4} className="text-center mcol1">
+            <img src={image2} alt="Our Vision" />
           </Col>
           <Col md={6}>
             <h3 className="vision-heading heading-color mcol1">Our Vision</h3>
@@ -36,15 +39,16 @@ export const About = () => {
           </Col>
         </Row>
 
+        {/* Row for 'Our Mission' section */}
         <Row className="rows-center">
           <Col md={6}>
-            <h3 className="heading-color ">Our Mission</h3>
+            <h3 className="heading-color">Our Mission</h3>
             <p>
               To hold "To-Let" boards at all rental properties available nearby.
             </p>
           </Col>
-          <Col md={4} className="text-center mi"> {/* Center image horizontally */}
-            <img src={image3} alt="image3" />
+          <Col md={4} className="text-center mi">
+            <img src={image3} alt="Our Mission" />
           </Col>
         </Row>
       </div>

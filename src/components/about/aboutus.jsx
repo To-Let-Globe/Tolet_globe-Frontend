@@ -1,121 +1,89 @@
-// import { Container } from 'react-bootstrap'
-import { useEffect } from 'react'
-import $ from 'jquery'
-import '../../style/about/about.css'
-import '../../style/about/about-4.css'
-import {Footer} from '../footer'
-import React from 'react';
-import ceo1 from '../../assets/image/about/CEO1.png'
-import ceo2 from '../../assets/image/about/CEO2.jpg'
-import ceo3 from '../../assets/image/about/CEO3.jpeg'
+import React, { useEffect } from 'react';
+import $ from 'jquery';
+import '../../style/about/about.css';
+import '../../style/about/about-4.css';
+import { Footer } from '../footer';
+import ceo1 from '../../assets/image/about/CEO1.png';
+import ceo2 from '../../assets/image/about/CEO2.jpg';
+import ceo3 from '../../assets/image/about/CEO3.jpeg';
 import divi from '../../assets/image/about/division.png';
 import { FAQ } from '../faq';
 // import { Fplus } from '../components/faq'
 
 export const AboutUs = () => {
   useEffect(() => {
-    const topoffset = document.getElementById('team-head')
-    var agPosY // Define agPosY variable
+    const topoffset = document.getElementById('team-head');
+    let agPosY;
 
-    var agTimelineLineProgress = $('.js-timeline_line-progress')
-    var agTimelinePoint = $('.js-timeline-card_point-box')
-    var agTimelineItem = $('.js-timeline_item')
-    var agOuterHeight = $(window).outerHeight()
-    // eslint-disable-next-line no-unused-vars
-    var agHeight = $(window).height()
-    var agFlag = false
+    const agTimelineLineProgress = $('.js-timeline_line-progress');
+    const agTimelinePoint = $('.js-timeline-card_point-box');
+    const agTimelineItem = $('.js-timeline_item');
+    const agOuterHeight = $(window).outerHeight();
+    let agHeight = $(window).height();
+    let agFlag = false;
 
     function fnOnScroll() {
-      agPosY = $(window).scrollTop() // Assign value to agPosY
-      fnUpdateFrame()
+      agPosY = $(window).scrollTop();
+      fnUpdateFrame();
     }
 
     function fnOnResize() {
-      agPosY = $(window).scrollTop() // Assign value to agPosY
-      agHeight = $(window).height()
-      fnUpdateFrame()
+      agPosY = $(window).scrollTop();
+      agHeight = $(window).height();
+      fnUpdateFrame();
     }
 
     function fnUpdateWindow() {
-      agFlag = false
-      fnUpdateProgress()
+      agFlag = false;
+      fnUpdateProgress();
     }
 
     function fnUpdateProgress() {
-      var agTop = topoffset.offsetTop + 0
-
-      var i = agTop + agPosY - $(window).scrollTop()
-      var a =
-        agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop()
-      var n = agPosY - a + agOuterHeight / 2
+      const agTop = topoffset.offsetTop + 0;
+      const i = agTop + agPosY - $(window).scrollTop();
+      const a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+      let n = agPosY - a + agOuterHeight / 2;
       if (i <= agPosY + agOuterHeight / 2) {
-        n = i - a
+        n = i - a;
       }
-      agTimelineLineProgress.css({ height: n + 'px' })
+      agTimelineLineProgress.css({ height: n + 'px' });
 
       agTimelineItem.each(function () {
-        var agTop = $(this).find(agTimelinePoint).offset().top
-
-        if (
-          agTop + agPosY - $(window).scrollTop() <
-          agPosY + 0.5 * agOuterHeight
-        ) {
-          $(this).addClass('js-ag-active')
+        const agTop = $(this).find(agTimelinePoint).offset().top;
+        if (agTop + agPosY - $(window).scrollTop() < agPosY + 0.5 * agOuterHeight) {
+          $(this).addClass('js-ag-active');
         } else {
-          $(this).removeClass('js-ag-active')
+          $(this).removeClass('js-ag-active');
         }
-      })
+      });
     }
 
     function fnUpdateFrame() {
-      agFlag || requestAnimationFrame(fnUpdateWindow)
-      agFlag = true
+      agFlag || requestAnimationFrame(fnUpdateWindow);
+      agFlag = true;
     }
 
-    $(window).on('scroll', fnOnScroll)
-    $(window).on('resize', fnOnResize)
+    $(window).on('scroll', fnOnScroll);
+    $(window).on('resize', fnOnResize);
 
     return () => {
-      $(window).off('scroll', fnOnScroll)
-      $(window).off('resize', fnOnResize)
-    }
-  }, [])
-  // const [isOpen1, setIsOpen1] = useState(false);
-  // const [isOpen2, setIsOpen2] = useState(false);
-  // const [isOpen3, setIsOpen3] = useState(false);
-  // const [isOpen4, setIsOpen4] = useState(false);
-  // const [isOpen5, setIsOpen5] = useState(false);
-
-  // // Function to toggle open/close state for the first question
-  // const toggleFAQ1 = () => {
-  //   setIsOpen1(!isOpen1);
-  // };
-
-  // // Function to toggle open/close state for the second question
-  // const toggleFAQ2 = () => {
-  //   setIsOpen2(!isOpen2);
-  // };
-  // const toggleFAQ3 = () => {
-  //   setIsOpen3(!isOpen3);
-  // };
-  // const toggleFAQ4 = () => {
-  //   setIsOpen4(!isOpen4);
-  // };
-  // const toggleFAQ5 = () => {
-  //   setIsOpen5(!isOpen5);
-  // };
-  
+      $(window).off('scroll', fnOnScroll);
+      $(window).off('resize', fnOnResize);
+    };
+  }, []);
 
   return (
     <section className="about">
       <div className="head-title">
         <h1>About Us</h1>
       </div>
+
       <div className="js-timeline ag-timeline">
         <div className="js-timeline_line ag-timeline_line">
           <div className="js-timeline_line-progress ag-timeline_line-progress"></div>
         </div>
 
+        {/* WHO WE ARE section */}
         <div className="timeline">
           <div className="checkpoint check1">
             <div>
@@ -129,6 +97,8 @@ export const AboutUs = () => {
               </p>
             </div>
           </div>
+
+          {/* OUR JOURNEY section */}
           <div className="checkpoint check2">
             <div>
               <h2>Our Journey</h2>
@@ -141,6 +111,8 @@ export const AboutUs = () => {
               </p>
             </div>
           </div>
+
+          {/* MISSION AND VISION section */}
           <div className="checkpoint check3">
             <div>
               <h2>Mission and Vision</h2>
@@ -152,6 +124,8 @@ export const AboutUs = () => {
               </p>
             </div>
           </div>
+
+          {/* SERVICES WE OFFER section */}
           <div className="checkpoint check4">
             <div>
               <h2>Services we offer</h2>
@@ -165,6 +139,8 @@ export const AboutUs = () => {
               </p>
             </div>
           </div>
+
+          {/* CLIENT-CENTRIC APPROACH section */}
           <div className="checkpoint check5">
             <div>
               <h2>Client-Centric Approach</h2>
@@ -177,6 +153,7 @@ export const AboutUs = () => {
             </div>
           </div>
 
+          {/* EXPERT TEAM section */}
           <div className="checkpoint check6">
             <div>
               <h2>Expert Team</h2>
@@ -185,7 +162,7 @@ export const AboutUs = () => {
                 knowledge of the property management industry. From property
                 managers to maintenance experts, each member of the To-Let team
                 is committed to ensuring the optimal performance and value
-                of your property.
+                of your property.
               </p>
             </div>
           </div>
@@ -193,11 +170,10 @@ export const AboutUs = () => {
       </div>
 
       <div className="team-container">
-        <div id="team-head" className='mb-2'>Our team</div>
+        <div id="team-head" className="mb-2">Our team</div>
+        <div><img className="imagd" src={divi} alt="division" /></div>
 
-        <div><img className='imagd' src={divi} alt='division'/></div>
-        
-
+        {/* Transitions applied on the images in our team section */}
         <div className="team-images">
           <div className="flip-box">
             <div className="flip-box-inner">
@@ -209,7 +185,7 @@ export const AboutUs = () => {
                   style={{ width: '250px', height: '250px' }}
                 />
               </div>
-              <div class="flip-box-back">
+              <div className="flip-box-back">
                 <a href="https://www.linkedin.com/in/mayur-kukreja-280b71b4/">
                   <h2>Mayur Kukreja</h2>
                   <p>CEO & Founder</p>
@@ -218,35 +194,35 @@ export const AboutUs = () => {
             </div>
           </div>
 
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
+          <div className="flip-box">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
                 <img
-                  class="imagew"
+                  className="imagew"
                   src={ceo3}
-                  alt="Co founder"
+                  alt="Co-founder"
                   style={{ width: '250px', height: '250px' }}
                 />
               </div>
-              <div class="flip-box-back">
+              <div className="flip-box-back">
                 <a href="https://www.linkedin.com/in/emanshu-wadhwani-258678176/">
-                  <h2>Emanshu wadhwani</h2>
+                  <h2>Emanshu Wadhwani</h2>
                   <p>Co-founder</p>
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
+          <div className="flip-box">
+            <div className="flip-box-inner">
+              <div className="flip-box-front">
                 <img
                   src={ceo2}
                   alt="Developer"
                   style={{ width: '250px', height: '250px' }}
                 />
               </div>
-              <div class="flip-box-back">
+              <div className="flip-box-back">
                 <a href="https://www.linkedin.com/in/rohit-kanaujia-b775a5171/">
                   <h2>Rohit Kanaujia</h2>
                   <p>Co-founder</p>
@@ -256,9 +232,11 @@ export const AboutUs = () => {
           </div>
         </div>
       </div>
+
+      {/* Uncomment the following line if the Fplus component is needed */}
       {/* <Fplus /> */}
-      < FAQ/>
-       <Footer/>
+      <FAQ />
+      <Footer />
     </section>
-  )
-}
+  );
+};
