@@ -24,7 +24,7 @@ import a7 from '../../assets/image/property/author7.jpg'
 import a8 from '../../assets/image/property/author8.jpg'
 import { Footer } from '../footer';
 const Listing = () => {
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
      
@@ -32,7 +32,7 @@ const Listing = () => {
 
         <div className="container">
 
-          <p className="section-subtitle">Properties listing 205</p>
+          {/*<p className="section-subtitle">Properties listing</p>*/}
 
           <ul className="property-list has-scrollbar">
 
@@ -112,7 +112,7 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      
                     </li>
 
                   </ul>
@@ -138,7 +138,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a1")}*/ >
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a1")} >
                       SHOW MORE
                     </button>
 
@@ -230,7 +230,7 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      
                     </li>
 
                   </ul>
@@ -257,7 +257,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a2")}*/>
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a2")}>
                       SHOW MORE
                     </button>
 
@@ -348,7 +348,7 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      
                     </li>
                   </ul>
 
@@ -374,7 +374,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a3")}*/>
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a3")}>
                       SHOW MORE
                     </button>
 
@@ -441,7 +441,7 @@ const Listing = () => {
                   </div>
 
                   <p className="card-text">
-                  Semi Furnished, Ground
+                  Semi Furnished, Ground Floor
                   </p>
 
                   <ul className="card-list">
@@ -461,7 +461,7 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      
                     </li>
                   </ul>
 
@@ -487,7 +487,7 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a4")}*/>
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a4")}>
                       SHOW MORE
                     </button>
 
@@ -510,13 +510,14 @@ const Listing = () => {
 
         </div>
       </section>
-    
+     
 
-
+     
       <section className="property" id="property">
+
         <div className="container">
 
-          <p className="section-subtitle">Properties listing 205</p>
+          {/*<p className="section-subtitle">Properties listing</p>*/}
 
           <ul className="property-list has-scrollbar">
 
@@ -526,17 +527,18 @@ const Listing = () => {
                 <figure className="card-banner">
 
                   <a href="#">
-                    <img src={p5} alt="New Apartment Nice View" style={{w:"100"}}/>
+                    <img src={p5} alt="New Apartment Nice View" style={{w:"100"}} />
                   </a>
                 
-                  
                   <div className="card-badge-right orange">For Rent</div>
                   <div className="card-badge-left green">Featured</div>
+
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
-                      <address>Chinhat Satrik Road, Lucknow</address>
+                      <FaLocationDot className='bed-bath-ft-icon' size={22}/>
+                      &nbsp;
+                      <address>Chinhat Satrik Road, Lucknow </address>
                     </button>
 
                     <button className="banner-img_video-btn">
@@ -546,25 +548,41 @@ const Listing = () => {
                       <FaRegImage className='bed-bath-ft-icon' size={22}/>
                       6
                     </button>
+
                   </div>
 
                 </figure>
 
                 <div className="card-content">
+                  <div className='name_icon'>
                   <h3 className="h3 card-title">
-                    <a href="#"> Flat For Sale</a>
-                  </h3>
+                  <a href="#"> Flat For Rent</a>
+                  
                   <div className="card-price">
-                    Rs. 30,50,000
+                  Rs. 30,50,000
                   </div>
+                  </h3>
 
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  </div>
+                  </div>
                   <p className="card-text">
-                    Semi Furnished, 4th Floor
+                    Semi Furnished, 4th floor  <br/>
+                    
                   </p>
 
                   <ul className="card-list">
 
-                  <li className="card-item">
+                    <li className="card-item">
                     <IoBedOutline className='bed-bath-ft-icon' size={25}/>
                      &nbsp;
                        2
@@ -579,12 +597,12 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      <sup></sup>
                     </li>
+
                   </ul>
 
                 </div>
-
                 <div className="card-footer">
 
                   <div className="card-author">
@@ -605,8 +623,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a5")}*/>
-                    SHOW MORE
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a5")} >
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -630,20 +648,19 @@ const Listing = () => {
                 <figure className="card-banner">
 
                   <a href="#">
-                    <img src={p6} alt="Modern Apartments" style={{w:"100"}}/>
+                    <img src={p6} alt="Modern Apartments" style={{w:"100"}} />
                   </a>
 
-                  
                   <div className="card-badge-right orange">For Rent</div>
                   <div className="card-badge-left green">Featured</div>
 
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <FaLocationDot className='bed-bath-ft-icon' size={22}/>
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
+
                       <address>Sarojini Nagar Kanpur highway and Bijnor road  ,Lucknow</address>
                     </button>
-
                     <button className="banner-img_video-btn">
                       <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
@@ -651,24 +668,38 @@ const Listing = () => {
                       <FaRegImage className='bed-bath-ft-icon' size={22}/>
                       6
                     </button>
+
                   </div>
 
                 </figure>
 
                 <div className="card-content">
+                  <div className='name_icon'>
                   <h3 className="h3 card-title">
-                    <a href="#">House For Rent</a>
-                 </h3>
+                    <a href="#">House for rent</a>
+                
                   <div className="card-price">
                     Rs. 2,20,000
                   </div>
+                  </h3>
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  </div>
+                  </div>
 
                   <p className="card-text">
-                    Semi Furnished, 2nd Floor
+                  Semi Furnished, 2nd floor
                   </p>
 
                   <ul className="card-list">
-
                   <li className="card-item">
                     <IoBedOutline className='bed-bath-ft-icon' size={25}/>
                      &nbsp;
@@ -678,15 +709,16 @@ const Listing = () => {
                     <li className="card-item">
                     <LuBath className='bed-bath-ft-icon' size={25}/>
                     &nbsp;
-                      Both
+                      3
                     </li>
 
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
-                    </li>               
-                    </ul>
+                      
+                    </li>
+
+                  </ul>
 
                 </div>
 
@@ -695,7 +727,7 @@ const Listing = () => {
                   <div className="card-author">
 
                     <figure className="author-avatar">
-                      <img src={a6} alt="William Seklo" style={{w:"100"}}/>
+                      <img src={a6} alt="William Seklo" style={{w:"100"}} />
                     </figure>
 
                     <div>
@@ -710,11 +742,11 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a6")}*/>
-                    SHOW MORE
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a6")}>
+                      SHOW MORE
                     </button>
 
-                    {/*button className="card-footer-actions-btn">
+                    {/*<button className="card-footer-actions-btn">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
@@ -738,17 +770,14 @@ const Listing = () => {
                     <img src={p7} alt="Comfortable Apartment" style={{w:"100"}}/>
                   </a>
 
-                  
                   <div className="card-badge-right orange">For Rent</div>
                   <div className="card-badge-left green">Featured</div>
-
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
                     <FaLocationDot className='bed-bath-ft-icon' size={22}/>
-                      <address>Panchmukhi Mandir, Alambagh</address>
+                      <address>Panchmukhi Mandir, Alambagh, Lucknow</address>
                     </button>
-
                     <button className="banner-img_video-btn">
                       <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
@@ -761,18 +790,30 @@ const Listing = () => {
                 </figure>
 
                 <div className="card-content">
+                <div className='name_icon'>
                 <h3 className="h3 card-title">
-                    <a href="#"> House For Rent </a>
-                  </h3>
+                    <a href="#">House For Rent </a>
 
                   <div className="card-price">
-                    Rs. 4,500/Month
+                  Rs. 14,000/Month
+                  </div>
+                  </h3>
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  
+                  </div>
                   </div>
 
-                  
-
                   <p className="card-text">
-                    Semi Furnished, 2nd Floor
+                  Semi Furnished, 2nd floor
                   </p>
 
                   <ul className="card-list">
@@ -792,9 +833,8 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      
                     </li>
-
                   </ul>
 
                 </div>
@@ -819,8 +859,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn"/* onClick={() => navigate("/flow2a7")}*/>
-                    SHOW MORE
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a7")}>
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -832,12 +872,10 @@ const Listing = () => {
                     </button>*/}
 
                   </div>
-
+                    </div>
                 </div>
-
-              </div>
             </li>
-
+                      
             <li>
               <div className="property-card">
 
@@ -846,11 +884,8 @@ const Listing = () => {
                   <a href="#">
                     <img src={p8} alt="Luxury villa in Rego Park" style={{w:"100"}}/>
                   </a>
-
-                  
                   <div className="card-badge-right orange">For Rent</div>
                   <div className="card-badge-left green">Featured</div>
-
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
@@ -870,22 +905,32 @@ const Listing = () => {
                 </figure>
 
                 <div className="card-content">
+                  <div className='name_icon'>
                 <h3 className="h3 card-title">
                     <a href="#">Shop For Rent</a>
-                  </h3>
-
                   <div className="card-price">
                    Rs. 3,500
                   </div>
-
-                  
+                  </h3>
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  </div>
+                  </div>
 
                   <p className="card-text">
-                    Non Furnished, Ground Floor
+                  Non Furnished, Ground Floor
                   </p>
 
                   <ul className="card-list">
-
+ 
                   <li className="card-item">
                     <IoBedOutline className='bed-bath-ft-icon' size={25}/>
                      &nbsp;
@@ -901,7 +946,7 @@ const Listing = () => {
                     <li className="card-item">
                       <PiGridFour className='bed-bath-ft-icon' size={25}/>
                       &nbsp;
-                      1358 ft<sup>2</sup>
+                      
                     </li>
                   </ul>
 
@@ -927,8 +972,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a8")}*/>
-                    SHOW MORE
+                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a8")}>
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -950,495 +995,6 @@ const Listing = () => {
 
         </div>
       </section>
-    
-
-
-
-  
-    
-      {/*<section className="property" id="property">
-        <div className="container">
-
-          <p className="section-subtitle">Properties listing 205</p>
-
-          <ul className="property-list has-scrollbar">
-
-            <li>
-              <div className="property-card">
-
-                <figure className="card-banner">
-
-                  <a href="#">
-                    <img src={p1} alt="New Apartment Nice View" style={{w:"100"}}/>
-                  </a>
-                
-                  <div className="card-badge green">For sale</div>
-
-                  <div className="banner-actions">
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>vivek khand,lucknow</address>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3 card-title">
-                    <a href="#">3 BHK House On Rent</a>
-                  </h3>
-                  <div className="card-price">
-                    <strong>RS. 40,000</strong>
-                  </div>
-
-                  <p className="card-text">
-                    Beautiful ,Updated ,graund level in desirable <br/>
-                    Bay Bla Bla.....
-                  </p>
-
-                  <ul className="card-list">
-
-                    <li className="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>4</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>1358</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div className="card-footer">
-
-                  <div className="card-author">
-
-                    <figure className="author-avatar">
-                      <img src={author} alt="William Seklo" style={{w:"100"}}/>
-                    </figure>
-
-                    <div>
-                      <p className="author-name">
-                        <a href="#">Shaikh Ubaid Tibrani</a>
-                      </p>
-
-                      <p className="author-title">Full Stack Developer</p>
-                    </div>
-
-                  </div>
-
-                  <div className="card-footer-actions">
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="property-card">
-
-                <figure className="card-banner">
-
-                  <a href="#">
-                    <img src={p2} alt="Modern Apartments" style={{w:"100"}}/>
-                  </a>
-
-                  <div className="card-badge green">For Sales</div>
-
-                  <div className="banner-actions">
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Gomb Nagar,lucknow</address>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div className="card-content">
-                  <h3 className="h3 card-title">
-                    <a href="#">2 BHK Flat On Rent</a>
-                 </h3>
-                  <div className="card-price">
-                    <strong>75 lac</strong>
-                  </div>
-
-                  <p className="card-text">
-                    Beautiful ,Updated ,Ground level in Desirable <br/>
-                     Bay Bla Bla Bla....
-                  </p>
-
-                  <ul className="card-list">
-
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>1051</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div className="card-footer">
-
-                  <div className="card-author">
-
-                    <figure className="author-avatar">
-                      <img src={author}alt="William Seklo" style={{w:"100"}}/>
-                    </figure>
-
-                    <div>
-                      <p className="author-name">
-                        <a href="#">Shaikh Ubaid Tibrani</a>
-                      </p>
-
-                      <p className="author-title">Full Stack Developer</p>
-                    </div>
-
-                  </div>
-
-                  <div className="card-footer-actions">
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="property-card">
-
-                <figure className="card-banner">
-
-                  <a href="#">
-                    <img src={p3} alt="Comfortable Apartment" style={{w:"100"}}/>
-                  </a>
-
-                  <div className="card-badge green">For sale</div>
-
-                  <div className="banner-actions">
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>vigran khan ,lucknow</address>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div className="card-content">
-
-                  <div className="card-price">
-                    <strong>26 lac</strong>/Month
-                  </div>
-
-                  <h3 className="h3 card-title">
-                    <a href="#">2 BHK House On Rent </a>
-                  </h3>
-
-                  <p className="card-text">
-                    Beautiful ,Upadated ,Ground lavel in Desirable <br/>
-                    Bay Bla Bla Bla.....
-                  </p>
-
-                  <ul className="card-list">
-
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>700</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div className="card-footer">
-
-                  <div className="card-author">
-
-                    <figure className="author-avatar">
-                      <img src={author} alt="William Seklo" style={{w:"100"}}/>
-                    </figure>
-
-                    <div>
-                      <p className="author-name">
-                        <a href="#">Shaikh Ubaid Tibrani</a>
-                      </p>
-
-                      <p className="author-title">Full Stack Developer</p>
-                    </div>
-
-                  </div>
-
-                  <div className="card-footer-actions">
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div className="property-card">
-
-                <figure className="card-banner">
-
-                  <a href="#">
-                    <img src={p4} alt="Luxury villa in Rego Park" style={{w:"100"}}/>
-                  </a>
-
-                  <div className="card-badge green">For Rent</div>
-
-                  <div className="banner-actions">
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
-                      <address>Belmont Gardens, Chicago</address>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
-                    </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
-                    </button>
-
-                  </div>
-
-                </figure>
-
-                <div className="card-content">
-
-                  <div className="card-price">
-                    <strong>RS.5000</strong>/Month
-                  </div>
-
-                  <h3 className="h3 card-title">
-                    <a href="#">khurdu ,rawivar ,lucknow</a>
-                  </h3>
-
-                  <p className="card-text">
-                    Beautiful ,Updated <br/>
-                    Bay Bal Bal Bal....
-                  </p>
-
-                  <ul className="card-list">
-
-                    <li className="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
-                    <li className="card-item">
-                      <strong>3450</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Square Ft</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div className="card-footer">
-
-                  <div className="card-author">
-
-                    <figure className="author-avatar">
-                      <img src={author} alt="William Seklo" style={{width:"200"}}/>
-                    </figure>
-
-                    <div>
-                      <p className="author-name">
-                        <a href="#">Shaikh Ubaid Tibrani</a>
-                      </p>
-
-                      <p className="author-title">Full Stack-Developer</p>
-                    </div>
-
-                  </div>
-
-                  <div className="card-footer-actions">
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="resize-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-
-                    <button className="card-footer-actions-btn">
-                      <ion-icon name="add-circle-outline"></ion-icon>
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>*/}
       <Footer/>
       
 
