@@ -34,7 +34,7 @@ const Listing = () => {
 
         <div className="container">
 
-          <p className="section-subtitle">Properties listing 205</p>
+          <p className="section-subtitle">Properties listing</p>
 
           <ul className="property-list has-scrollbar">
 
