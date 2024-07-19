@@ -1,6 +1,11 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import './../../style/property/listing.css';
+import {CiShare2, CiHeart} from 'react-icons/ci';
+import {FaImage, FaLocationDot, FaRegImage, FaVideo} from 'react-icons/fa6';
+import {IoBedOutline, IoAdd} from 'react-icons/io5';
+import {LuBath} from 'react-icons/lu';
+import {PiGridFour} from 'react-icons/pi';
 import p1 from '../../assets/image/property/property-1.jpg'
 import author from "../../assets/image/property/author.jpg"
 import p2 from '../../assets/image/property/property-2.jpg'
@@ -19,7 +24,7 @@ import a7 from '../../assets/image/property/author7.jpg'
 import a8 from '../../assets/image/property/author8.jpg'
 import { Footer } from '../footer';
 const Listing = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   return (
     <>
      
@@ -40,26 +45,23 @@ const Listing = () => {
                     <img src={p1} alt="New Apartment Nice View" style={{w:"100"}} />
                   </a>
                 
-                  <div className="card-badge green">For Rent</div>
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
 
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                      <FaLocationDot className='bed-bath-ft-icon' size={22}/>
+                      &nbsp;
                       <address>D 801 the woods apartment, Lucknow </address>
                     </button>
 
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
 
                   </div>
@@ -67,13 +69,27 @@ const Listing = () => {
                 </figure>
 
                 <div className="card-content">
+                  <div className='name_icon'>
                   <h3 className="h3 card-title">
-                    <a href="#">Flat For Rent</a>
-                  </h3>
+                  <a href="#"> Flat For Rent</a>
+                  
                   <div className="card-price">
-                    <strong>Rs. 12,000 (negotiable) </strong>
+                  Rs. 12,000 (negotiable)
                   </div>
+                  </h3>
 
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  </div>
+                  </div>
                   <p className="card-text">
                     Semi Furnished, 4th floor  <br/>
                     
@@ -82,33 +98,26 @@ const Listing = () => {
                   <ul className="card-list">
 
                     <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Both</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
 
                   </ul>
 
                 </div>
-
                 <div className="card-footer">
 
                   <div className="card-author">
@@ -129,8 +138,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a1")} >
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a1")}*/ >
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -157,26 +166,22 @@ const Listing = () => {
                     <img src={p2} alt="Modern Apartments" style={{w:"100"}} />
                   </a>
 
-                  <div className="card-badge green">For Rent</div>
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
 
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
 
                       <address>Munshipulia opposite Ishwar Dham Mandir, Lucknow</address>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
 
                   </div>
@@ -184,11 +189,25 @@ const Listing = () => {
                 </figure>
 
                 <div className="card-content">
+                  <div className='name_icon'>
                   <h3 className="h3 card-title">
                     <a href="#">House for rent</a>
-                 </h3>
+                
                   <div className="card-price">
-                    <strong>Rs. 10,000</strong>/Month
+                    Rs. 10,000/Month
+                  </div>
+                  </h3>
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  </div>
                   </div>
 
                   <p className="card-text">
@@ -196,29 +215,22 @@ const Listing = () => {
                   </p>
 
                   <ul className="card-list">
-
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Western</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      3
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
 
                   </ul>
@@ -245,8 +257,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a2")}>
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a2")}*/>
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -273,43 +285,47 @@ const Listing = () => {
                     <img src={p3} alt="Comfortable Apartment" style={{w:"100"}}/>
                   </a>
 
-                  <div className="card-badge green">For Rent</div>
-
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
                       <address>Chinnat sarik road, Lucknow</address>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
-
                   </div>
 
                 </figure>
 
                 <div className="card-content">
-
+                <div className='name_icon'>
                 <h3 className="h3 card-title">
                     <a href="#">House For Rent </a>
-                  </h3>
 
                   <div className="card-price">
-                    <strong>Rs. 14,000</strong>/Month
+                  Rs. 14,000/Month
                   </div>
-
+                  </h3>
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
                   
+                  </div>
+                  </div>
 
                   <p className="card-text">
                   Semi Furnished, Ground floor
@@ -317,30 +333,23 @@ const Listing = () => {
 
                   <ul className="card-list">
 
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Both</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
-
                   </ul>
 
                 </div>
@@ -365,8 +374,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a3")}>
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a3")}*/>
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -378,12 +387,10 @@ const Listing = () => {
                     </button>*/}
 
                   </div>
-
+                    </div>
                 </div>
-
-              </div>
             </li>
-
+                      
             <li>
               <div className="property-card">
 
@@ -392,43 +399,46 @@ const Listing = () => {
                   <a href="#">
                     <img src={p4} alt="Luxury villa in Rego Park" style={{w:"100"}}/>
                   </a>
-
-                  <div className="card-badge green">For Rent</div>
-
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
                       <address>Keshav Nagar, Lucknow</address>
                     </button>
 
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
-
                   </div>
 
                 </figure>
 
                 <div className="card-content">
-
+                  <div className='name_icon'>
                 <h3 className="h3 card-title">
                     <a href="#">House For Rent</a>
-                  </h3>
                   <div className="card-price">
-                    <strong>Rs. 8,500</strong>
+                   Rs. 8,500
                   </div>
-
-                  
+                  </h3>
+                  <div className='card_icons'>
+                  <a href='#'>
+                  <CiShare2 className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <IoAdd className='card_icon' size={22}/>
+                  </a>
+                  <a href='#'>
+                  <CiHeart className='card_icon' size={22}/>
+                  </a>
+                  </div>
+                  </div>
 
                   <p className="card-text">
                   Semi Furnished, Ground
@@ -436,30 +446,23 @@ const Listing = () => {
 
                   <ul className="card-list">
  
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Both</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
-
                   </ul>
 
                 </div>
@@ -484,8 +487,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a4")}>
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a4")}*/>
+                      SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -526,28 +529,23 @@ const Listing = () => {
                     <img src={p5} alt="New Apartment Nice View" style={{w:"100"}}/>
                   </a>
                 
-                  <div className="card-badge green">For sale</div>
-
+                  
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
                       <address>Chinhat Satrik Road, Lucknow</address>
                     </button>
 
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
-
                   </div>
 
                 </figure>
@@ -557,7 +555,7 @@ const Listing = () => {
                     <a href="#"> Flat For Sale</a>
                   </h3>
                   <div className="card-price">
-                    <strong>Rs. 30,50,000</strong>
+                    Rs. 30,50,000
                   </div>
 
                   <p className="card-text">
@@ -566,30 +564,23 @@ const Listing = () => {
 
                   <ul className="card-list">
 
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Western</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
-
                   </ul>
 
                 </div>
@@ -614,8 +605,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a5")}>
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a5")}*/>
+                    SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -642,28 +633,24 @@ const Listing = () => {
                     <img src={p6} alt="Modern Apartments" style={{w:"100"}}/>
                   </a>
 
-                  <div className="card-badge green">For Rent</div>
+                  
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
 
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                      <FaLocationDot className='bed-bath-ft-icon' size={22}/>
                       <address>Sarojini Nagar Kanpur highway and Bijnor road  ,Lucknow</address>
                     </button>
 
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
-
                   </div>
 
                 </figure>
@@ -673,7 +660,7 @@ const Listing = () => {
                     <a href="#">House For Rent</a>
                  </h3>
                   <div className="card-price">
-                    <strong>Rs. 2,20,000</strong>
+                    Rs. 2,20,000
                   </div>
 
                   <p className="card-text">
@@ -682,31 +669,24 @@ const Listing = () => {
 
                   <ul className="card-list">
 
-                    <li className="card-item">
-                      <strong>1</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Both</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
-                    </li>
-
-                  </ul>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
+                    </li>               
+                    </ul>
 
                 </div>
 
@@ -730,8 +710,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a6")}>
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a6")}*/>
+                    SHOW MORE
                     </button>
 
                     {/*button className="card-footer-actions-btn">
@@ -758,28 +738,24 @@ const Listing = () => {
                     <img src={p7} alt="Comfortable Apartment" style={{w:"100"}}/>
                   </a>
 
-                  <div className="card-badge green">For Rent</div>
+                  
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
 
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
                       <address>Panchmukhi Mandir, Alambagh</address>
                     </button>
 
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
-
                   </div>
 
                 </figure>
@@ -790,7 +766,7 @@ const Listing = () => {
                   </h3>
 
                   <div className="card-price">
-                    <strong>Rs. 4,500</strong>/Month
+                    Rs. 4,500/Month
                   </div>
 
                   
@@ -801,28 +777,22 @@ const Listing = () => {
 
                   <ul className="card-list">
 
-                    <li className="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Western</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Residential</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
 
                   </ul>
@@ -849,8 +819,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a7")}>
-                      Explore
+                    <button className="card-footer-actions-btn"/* onClick={() => navigate("/flow2a7")}*/>
+                    SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -877,28 +847,24 @@ const Listing = () => {
                     <img src={p8} alt="Luxury villa in Rego Park" style={{w:"100"}}/>
                   </a>
 
-                  <div className="card-badge green">For Rent</div>
+                  
+                  <div className="card-badge-right orange">For Rent</div>
+                  <div className="card-badge-left green">Featured</div>
 
                   <div className="banner-actions">
 
                     <button className="banner-actions-btn">
-                      <ion-icon name="location"></ion-icon>
-
+                    <FaLocationDot className='bed-bath-ft-icon' size={22}/>
                       <address>Pinkcity Colony, Lucknow</address>
                     </button>
 
-                    <button className="banner-actions-btn">
-                      <ion-icon name="camera"></ion-icon>
-
-                      <span>4</span>
+                    <button className="banner-img_video-btn">
+                      <FaVideo className='bed-bath-ft-icon' size={22}/>
                     </button>
-
-                    <button className="banner-actions-btn">
-                      <ion-icon name="film"></ion-icon>
-
-                      <span>2</span>
+                    <button className="banner-img_video-btn">
+                      <FaRegImage className='bed-bath-ft-icon' size={22}/>
+                      6
                     </button>
-
                   </div>
 
                 </figure>
@@ -909,7 +875,7 @@ const Listing = () => {
                   </h3>
 
                   <div className="card-price">
-                    <strong>Rs. 3,500</strong>
+                   Rs. 3,500
                   </div>
 
                   
@@ -920,30 +886,23 @@ const Listing = () => {
 
                   <ul className="card-list">
 
-                    <li className="card-item">
-                      <strong>1</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>BHK</span>
+                  <li className="card-item">
+                    <IoBedOutline className='bed-bath-ft-icon' size={25}/>
+                     &nbsp;
+                       2
                     </li>
 
                     <li className="card-item">
-                      <strong>Indian</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
+                    <LuBath className='bed-bath-ft-icon' size={25}/>
+                    &nbsp;
+                      Both
                     </li>
 
                     <li className="card-item">
-                      <strong>Commercial</strong>
-
-                      <ion-icon name="square-outline"></ion-icon>
-
-                      <span>Space Type</span>
+                      <PiGridFour className='bed-bath-ft-icon' size={25}/>
+                      &nbsp;
+                      1358 ft<sup>2</sup>
                     </li>
-
                   </ul>
 
                 </div>
@@ -968,8 +927,8 @@ const Listing = () => {
 
                   <div className="card-footer-actions">
 
-                    <button className="card-footer-actions-btn" onClick={() => navigate("/flow2a8")}>
-                      Explore
+                    <button className="card-footer-actions-btn" /*onClick={() => navigate("/flow2a8")}*/>
+                    SHOW MORE
                     </button>
 
                     {/*<button className="card-footer-actions-btn">
@@ -1480,7 +1439,9 @@ const Listing = () => {
 
         </div>
       </section>*/}
-    <Footer/>
+      <Footer/>
+      
+
 
     </>
 
