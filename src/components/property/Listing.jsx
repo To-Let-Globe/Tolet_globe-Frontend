@@ -518,7 +518,7 @@ const Listing = () => {
       <section className="property" id="property">
         <div className="container">
 
-          <p className="section-subtitle">Properties listing 205</p>
+          <p className="section-subtitle">Properties listing</p>
 
           <ul className="property-list has-scrollbar">
 
@@ -961,7 +961,7 @@ const Listing = () => {
       {/*<section className="property" id="property">
         <div className="container">
 
-          <p className="section-subtitle">Properties listing 205</p>
+          <p className="section-subtitle">Properties listing</p>
 
           <ul className="property-list has-scrollbar">
 
