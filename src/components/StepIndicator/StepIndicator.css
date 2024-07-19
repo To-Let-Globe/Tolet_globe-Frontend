@@ -1,0 +1,57 @@
+.progress-container {
+  display: flex;
+  column-gap: 10%;
+  justify-content: center;
+  width: 100%;
+  margin: 36px auto 0px;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #555; /* Dark background for steps */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.step.active {
+  background-color: #1ea735; /* Green background for active steps */
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  width: 168px;
+  height: 4px;
+  background-color: #555;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.step:first-child::before {
+  width: 115px;
+}
+
+.step.active::before {
+  background-color: #1ea735; /* Green line for active steps */
+}
+
+
+@media (max-width: 768px) {
+  .progress-container {
+    column-gap: 5%; /* Reduce gap on smaller screens */
+  }
+
+  .step {
+    width: 24px; /* Smaller step size on smaller screens */
+    height: 24px;
+    font-size: 0.8em; /* Smaller font size on smaller screens */
+  }
+}

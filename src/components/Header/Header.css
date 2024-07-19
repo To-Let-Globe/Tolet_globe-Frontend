@@ -1,0 +1,55 @@
+/* src/components/Header.css */
+.header {
+    background-color: #f4b400; /* yellow background */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.user-info .details{
+    margin-left: 20px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 14%;
+}
+
+.user-info h2, .user-info p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.user-info h2 {
+    font-size: 1.5em;
+}
+
+.user-info p {
+    font-size: 0.9em;
+}
+
+.nav-buttons .btn {
+    background-color: #0bbf99; /* button color */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.nav-buttons .btn.edit-profile {
+    background-color: black; /* edit button color */
+}
