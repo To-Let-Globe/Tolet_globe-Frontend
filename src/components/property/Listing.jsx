@@ -953,11 +953,6 @@ const Listing = () => {
         </div>
       </section>
     
-
-
-
-  
-    
       {/*<section className="property" id="property">
         <div className="container">
 
