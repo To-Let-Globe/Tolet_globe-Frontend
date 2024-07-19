@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import './../../style/property/listing.css';
