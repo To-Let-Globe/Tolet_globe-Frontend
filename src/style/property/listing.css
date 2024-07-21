@@ -536,7 +536,7 @@ button, a { transition: var(--transition); }
 .property-card .card-banner {
   background-color:rgb(255, 255, 255) ;
   position: relative;
-  aspect-ratio: 2 / 1.5;
+  aspect-ratio: 2/1.5;
   overflow: hidden;
   color: rgb(0, 0, 0);
 }
@@ -561,7 +561,7 @@ button, a { transition: var(--transition); }
 }
 
 .property-card .banner-actions {
-  position: absolute;
+  position:absolute;
   bottom: 15px;
   left: 15px;
   right: 15px;
@@ -587,6 +587,8 @@ button, a { transition: var(--transition); }
   display: flex;
   justify-content:space-between;
   align-items: flex-end;
+  padding: 5%;
+  padding-left:5%;
   padding-right:5%;
   padding-bottom: 5%;
   color: var(--white);
@@ -598,8 +600,8 @@ button, a { transition: var(--transition); }
 
 .property-card .card-content {
   background-color: rgb(255, 255, 255);
-  padding-left: 0%;
-  margin-left: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
   color:#000000;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
 }
@@ -627,7 +629,7 @@ button, a { transition: var(--transition); }
 }
 .card_icon{
   size: 50px;
-  margin-left: 5px;
+  margin-left: 2px;
   margin-bottom: 0%;
   border: 1px solid #000000;
 }
@@ -649,13 +651,14 @@ button, a { transition: var(--transition); }
 
 .property-card .card-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   row-gap: 15px;
+  margin-left: 15%;
 }
 
 .property-card .card-item {
-  padding-block: 5px;
+  padding-bottom: 5px;
   color: black;
   font-size: 15px;
   font-weight:var(--fs-4);
@@ -670,7 +673,7 @@ button, a { transition: var(--transition); }
 
 .property-card .card-item  {
   margin-left: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .property-card .card-item span { margin-top: 5px; }
