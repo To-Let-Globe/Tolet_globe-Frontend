@@ -1,10 +1,8 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react"
 import { MdBedroomParent } from "react-icons/md"
 import map from "../../assets/image/Flow2/map.png"
 import { MdOutlineBathroom } from "react-icons/md"
 import { IoTabletLandscape } from "react-icons/io5"
-// eslint-disable-next-line no-unused-vars
 import { LuParkingCircle } from "react-icons/lu"
 import { CiMobile4 } from "react-icons/ci"
 import { MdSecurity } from "react-icons/md"

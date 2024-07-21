@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: gray;
+  background-color: #0F0F0F;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 65px;
+  text-align: center;
+  color: #948F8F;
+}
+
+.submain{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 30px;
+  background:url('../../assets/image/landlord/bg-ovel.svg') no-repeat;
+  background-position: left 15px top 12px;
+  background-size: auto;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+.form {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > div{
+  width: 100%;
+}
+
+.form__group {
+  position: relative;
+  margin: 45px 0;
+}
+
+.form__label {
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #5cbeffa5;
+}
+
+.form__field {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  transform: translateY(0);
+}
+
+.form__field:focus ~ .form__label,
+.form__field:not(:placeholder-shown) ~ .form__label {
+  transform: translateY(-20px);
+  font-size: 14px;
+}
+
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #40B5A8;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.otp-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.otp-fill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.otp-fill input {
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid gray;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}

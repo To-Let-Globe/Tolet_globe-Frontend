@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import '../../style/property/property.css'
 import image1 from '../../assets/image/property/img1.svg'
 import image2 from '../../assets/image/property/img2.svg'
