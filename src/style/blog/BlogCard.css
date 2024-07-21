@@ -22,6 +22,8 @@
   color: #5aa79f !important;
   margin-bottom: 16px !important;
   font-size: 20px;
+  display: flex;
+  justify-content: left !important;
 }
 
 .readmore {
