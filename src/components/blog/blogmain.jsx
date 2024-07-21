@@ -1,21 +1,44 @@
-import "../../style/blog/blogmain.css"
-import { Container, Typography } from "@mui/material"
-import {Col, Row} from "react-bootstrap"
+/* eslint-disable no-unreachable */
+/* eslint-disable no-lone-blocks */
+import "../../style/blog/blogmain.css";
+// import { Container, Typography } from "@mui/material";
+// import { Col, Row } from "react-bootstrap";
 
-import image1 from '../../assets/image/blog/blog1/image1.png'
-import image2 from '../../assets/image/blog/blog2/image2.png'
-import image3 from '../../assets/image/blog/blog3/image1.jpg'
-import image4 from '../../assets/image/blog/blog4/image1.jpg'
-import image5 from '../../assets/image/blog/blog1/image1.png'
-import image6 from '../../assets/image/blog/blog6/image.png'
-import { Link } from 'react-router-dom'
-import { Category } from "../category"
-import { Footer } from "../footer"
+// import image1 from "../../assets/image/blog/blog1/image1.png";
+// import image2 from "../../assets/image/blog/blog2/image2.png";
+// import image3 from "../../assets/image/blog/blog3/image1.jpg";
+// import image4 from "../../assets/image/blog/blog4/image1.jpg";
+// import image5 from "../../assets/image/blog/blog1/image1.png";
+// import image6 from "../../assets/image/blog/blog6/image.png";
+// import { Link } from "react-router-dom";
+// import { Category } from "../category";
+import { Footer } from "../footer";
+import BlogContainer from "./BlogContainer";
+import CategoryContainer from "./CategoryContainer";
+import {NavBar} from "../NavBar";
 
-export const BlogMain = ()=>{
-    return(
-        <Container className="blog-container">
-            <div className="blog-header">
+export const BlogMain = () => {
+  return (
+    // <Container className="blog-container">
+    <>
+      {/* <NavBar /> */}
+      <div className="insights container mt-4 text-center">
+        <h2>To-Let Tales</h2>
+        <p className="insightspara">
+          Dive into a Sea of Endless Stories and Insights
+        </p>
+      </div>
+
+      <BlogContainer />
+      <div className="trending">
+      <CategoryContainer />
+        </div>
+      <Footer />
+    </>
+  );
+
+  {
+    /* <div className="blog-header">
                 <Typography variant="h1" className="insights text-center mt-5">
                 To-Let Tales
                 </Typography>
@@ -240,13 +263,14 @@ export const BlogMain = ()=>{
                     </Col>     
                 </Row>
             </div>
-            <Category/>
-            <Footer/>
-        </Container>
-    )
-}
+            <Category/> */
+  }
+  // </Container>
+  //   );
+};
 
-{/*import { BiRightArrow } from "react-icons/bi";
+{
+  /*import { BiRightArrow } from "react-icons/bi";
 import { BlogPage } from "../../SampleData";
 import { Category } from "../category";
 
@@ -271,4 +295,5 @@ export const BlogMain = () => {
       <Category/>
     </div>
   );
-};*/}
+};*/
+}

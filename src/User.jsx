@@ -1,6 +1,6 @@
 import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { NavBar } from "./components/navbar"
+import { NavBar } from "./components/NavBar"
 import { Layout } from "./components/layout"
 import { Contact } from "./components/contact/contactus"
 import { BlogPage1 } from "./components/blog/blogpage1"
