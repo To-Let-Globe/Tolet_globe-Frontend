@@ -14,7 +14,7 @@ function ServiceCard({ image, title, brief, colorToggle }) {
         </div>
       </div>
     </div>
-  );
+  ); 
 }
 
 export default ServiceCard;
